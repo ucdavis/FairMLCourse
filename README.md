@@ -68,8 +68,7 @@ sources such as the [online book](https://fairmlbook.org/) by Barocas
 *et al*, the [notes by Fraenkel](https://afraenkel.github.io/fairness-book/intro.html), and misc. papers in the fair ML area.
 
 We will also need some supporting materials now and then, such as the
-excellent paper on Simpson's Paradox,
-[https://www.researchgate.net/publication/11608762_](Good for Men, Good for Women, Bad for People), which we will cover in part.
+excellent paper on Simpson's Paradox, [Good for Men, Good for Women, Bad for People](https://www.researchgate.net/publication/11608762_), which we will cover in part.
 
 ## Grading 
 
@@ -94,7 +93,7 @@ Scutari](https://cran.r-project.org/web/packages/fairml/index.html).
 They all come with included datasets; Scutari has the COMPAS data, the
 German Credit data (is there bias against women in lending?), etc.  I
 also have a number of datasets of my own, and my own packages, such as
-[this one](https://github.com/matloff/WalkAMile).
+[this one](https://github.com/matloff/WAMfair).
 
 One of the group assignments will probably involve writing an R package
 implementing a new fair ML idea.
