@@ -3,6 +3,7 @@
 
 # A Course on (Social) Fairness of Machine Learning Algorithms
 
+CRN: 62868 <br>
 lecture: 1:40-3 pm TR <br>
 discussion: 4:10-5 pm R <br>
 4 units 
@@ -71,6 +72,8 @@ We will also need some supporting materials now and then, such as the
 excellent paper on Simpson's Paradox, [Good for Men, Good for Women, Bad for People](https://www.researchgate.net/publication/11608762_), which we will cover in part.
 
 ## Grading 
+
+Letter grade.
 
 Tentative breakdown:
 
