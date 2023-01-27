@@ -11,7 +11,7 @@ discussion: 4:10-5 pm R <br>
 Norm Matloff <br>
 Dept. of Computer Science <br>
 University of California, Davis<br>
-matloff@cs.ucdaivs.edu<br>
+matloff@cs.ucdavis.edu<br>
 ([my bio)](http://heather.cs.ucdavis.edu/matloff.html)
 
 ## Overview
