@@ -30,8 +30,8 @@ sentencing convicts.
 
 ## Prerequisites
 
-* Students both from *within* and from *outside* computer science are
-encouraged to enroll.
+* **Students both from within and from outside computer science are
+encouraged to enroll.**
 
 * Since students will work in groups, strengths of some group members
   may complement those of others in the group.
