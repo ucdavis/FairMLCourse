@@ -31,7 +31,7 @@ it can indeed be very subtle.
 
 * ["natural" solution to Monty Hall problem](https://heather.cs.ucdavis.edu/ProbStatDSBook/MontyHall.pdf)
 
-   If one carefully names all the events, the problem is actually easy.
+   If one carefully names all the events, the problem is actually easy,
    straightforward.
 
 * [Good for Men, Good for Women, Bad for People](https://www.researchgate.net/publication/11608762_)
