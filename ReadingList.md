@@ -89,7 +89,7 @@ it can indeed be very subtle.
 
 ### ML Fairness in Specific Applications
 
-* [NIST on facial recognition](ttps://www.nist.gov/news-events/news/2021/07/nist-evaluates-face-recognition-softwares-accuracy-flight-boarding)
+* [NIST on facial recognition](https://www.nist.gov/news-events/news/2021/07/nist-evaluates-face-recognition-softwares-accuracy-flight-boarding)
 
     Short, nontechnical summary.
 
