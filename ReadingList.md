@@ -62,9 +62,9 @@ it can indeed be very subtle.
     Good general presentation, not just in medical context.  Here we
     cover the first half.
 
-* [paper, "Fairness in Credit Scoring](https://arxiv.org/pdf/2103.01907.pdf)
+* [paper, "Fairness in Credit Scoring"](https://arxiv.org/pdf/2103.01907.pdf)
 
-    First half.
+    Good general presentation, not just in credit context.  First half.
 
 * [paper by NM](https://arxiv.org/abs/2210.06680)
 
