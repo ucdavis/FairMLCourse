@@ -21,13 +21,13 @@
 
 * All code that you submit, either for homework or in quizzes, will be
     executed by whoever grades it (the TA or myself).  Do not make use
-    of R packages that do not come with base-R, as they may not be on
+    of R packages that are not included in base-R, as they may not be on
     the grader's machine.
 
     In particular, do not use the Tidyverse.  I am 
     [not a fan of it](https://github.com/matloff/TidyverseSkeptic)
     anyway--it was developed as a way to make R easier for noncoders,
-    and I believe it makes it harder for them--but in any case, I may
+    and I believe it actually makes it harder for them--but in any case, I may
     not have a current version of the Tidyverse on the machine 
     I'm using for grading.
 
@@ -42,9 +42,11 @@
 ### R packages
 
 We will use various R packages that focus on fair ML (which WILL be on
-the graders' machines), such as:
+the graders' machines), such as (we will not use them all):
 
-* edf
+* [AIF360](IBM/AIF360/aif360/aif360-r)
+
+* [EDFfair](https://github.com/matloff/EDFfair)
 
 * [fairml](https://cran.r-project.org/web/packages/fairml/)
 
@@ -52,14 +54,17 @@ the graders' machines), such as:
 
 * [fairness](https://cran.r-project.org/web/packages/fairness/index.html)
 
-* Walk a Mile
+* [WAMfair](https://github.com/matloff/WAMfair)
+
+We will use the ML functions in
+[qeML](https://github.com/matloff/qeML).
 
 ### Use of R in Linear Algebra 
 
 Linear algebra is not a prerequisite for this class, but we will make
-occasional very light use of it.  I believe all or almost all of you
+occasional light use of it.  I believe all or almost all of you
 have had a course in it, but (a) one or two may not have and (b) you may
 not have seen it in R.  I have [a
-tutoral on matrix algebr](https://github.com/matloff/fastLinearAlgebra)
+tutoral on matrix algebra](https://github.com/matloff/fastLinearAlgebra)
 too; please read it.
 
