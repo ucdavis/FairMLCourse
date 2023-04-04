@@ -15,7 +15,8 @@ Yuyi Li <nylli@ucdavis.edu>
 
 ## Office hours, Locations
 
-TBA 
+NM: M 2-4, 3053 Kemper 
+YYL: TBA
 
 ## Readings 
 
