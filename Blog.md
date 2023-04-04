@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 3, 2315**
+
+Please read the class syllabus in our course GitHub repo. Read the procedural document as soon as possible, as it is vital to your doing well in the course.
+
 **April 3, 1450:**
 
 
