@@ -5,6 +5,10 @@ This is Quiz 0.  It will be different from the other quizzes,
 which will be in-class (weekly in the disucssion section, and also in
 lecture on the last day of class).
 
+This particular quiz is meant to be extremely easy.  Its main purposes
+are (a) to acquaint you with using OMSI and (b) to make sure you have
+basic skills in R.
+
 **Make SURE to read the instructions carefully.**
 
 ## Instructions
@@ -24,10 +28,12 @@ needed):
 
     You are not allowed to discuss this quiz with anyone else besides
     me and the TA.  Failure to adhere to this requirement
-    will be considered **a violation of the code of academic conduct.**
+    will be considered **a violation of the Code of Academic Conduct.**
 
 * Prepare for this quiz by learning the rudiments of R, in my
-  [fasteR tutorial](https://github.com/matloff/fasteR). 
+  [fasteR tutorial](https://github.com/matloff/fasteR).  For now, the
+  first dozen lessons or so will probably suffice, but as the quarter
+  progresses, continue reading.
 
 * Quiz questions, both here and in future quizzes, will be labeled
   either "R code answer" or "Text answer."  In the former case: 
@@ -70,5 +76,5 @@ new dataset, now 12 columns rather than 11.
 
 **Question 4:** Write code that prints: the proportion of foreign workers
 who have good credit; the proportion of workers with good credit who are
-foreign; the proportion of foreign workers; the proportion of workers
+foreign; the proportion of foreign workers; and the proportion of workers
 who have good credit.  (Print a 4-element vector.)
