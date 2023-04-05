@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**April 4, 1920:**
+
+Following up on what I said in class today: The quizzes are taken on an open-book basis, which in our case means that you use copies of the assigned readings I see two possible approaches:
+
+* Make hard copies and bring the hard copies to the quiz with you. Or:
+
+* Combine the copies into one giant PDF file. OMSI allows one to load PDFs, specifying them on the command line.
+
+Needless to say, either option requires you to do careful preparation well before a quiz.
+
 **April 4, 1810:**
 
 Someone brought up the perennial R-vs.-PYthon-for-data-science issue in class today. I made a comment about random forests, which I will elaborate on below, but first I should make one point clear: Our course is not an R-in-fair-learning class; it's a fair-learning class, period. The emphasis is on the concepts and algorithms, not on the languge.
