@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 5, 1240:**
+
+I've just posted Quiz 0 to our GitHub repo. This is basically a take-home quiz, with the goals of making sure you are ready to use OMSI and R. Instructions are in the document.
+
+There will be no quiz in discussion section next week. Instead, Yuyi will lecture on a certain R programming trick that you will likely find useful later in the course.
+
 **April 5, 1015:**
 
 As stated in the course flyer, this is a 4-unit class. The number of units must be 4; it is not optional.
