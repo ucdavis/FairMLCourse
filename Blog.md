@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 5, 1015:**
+
+As stated in the course flyer, this is a 4-unit class. The number of units must be 4; it is not optional.
+
+If you are listed for a number other than 4, please fix this right away, to avoid a late penalty. Go to the course in Schedule Builder, and click edit.
+
 **April 4, 2110:**
 
 We will soon be forming our Homework Groups. Group size is 3 or 4. If you have 1 to 3 people you would like to be in a Group with, please so inform Yuyi by Friday, April 7, 11:59 pm. Otherwise, she will assign you to a group.
