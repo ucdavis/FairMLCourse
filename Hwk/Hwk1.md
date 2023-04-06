@@ -146,3 +146,22 @@ about 23% of the time.
 
 Finally, we predict occupation, which has 6 different kinds of jobs.
 Here we were wrong about 65% of the time.
+
+To prevent overfitting, the qeML functions choose a random holdout set.
+They fit the model to the nonholdout data, then use the fitted model to
+predict the holdout.
+
+### Example of output
+
+For the **pef** data above, say Y is wage income and S is gender.  One
+of the lines in the returned data frame will be
+
+``` r
+'age,occ' 31358.21 30381.26 0.217
+```
+
+Your numbers will be somewhat different, due to randomness arising from
+the random holdout set.  But it seems using gender in addition to age
+and occupation did improve prediction somewhat, but that those two
+variables do have substantial correlation with S.
+
