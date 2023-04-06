@@ -3,6 +3,19 @@
 
 **Spring 2023**
 
+**April 5, 1735:**
+
+A student sent me e-mail, saying simply that his try to run OMSI failed. Well, of course, that is not useful information. :-)
+
+But neither is a screen shot useful, in many cases. Instead, in order to get help from the TA or me, you need to send us a full record of what led up to the error, including error messages. The best way to do this is with the **script** command, available on any Linux system or Mac.
+
+Running **script** causes a new shell to be launched. You then run whatever commands led to the error, e.g. running python to launch OMSI.  Whatever OMSI prints will be shown, including error messages.
+
+When you are done, exit from that shell, then send us the typescript output file; it has a record of whatever was written to the shell. 
+
+If you don't have a Unix-family system, you can run on CSIF. If you are not physically there, you'll need to use the -Y option if your error is on a GUI app, such as OMSI.
+
+
 **April 5, 1240:**
 
 I've just posted Quiz 0 to our GitHub repo. This is basically a take-home quiz, with the goals of making sure you are ready to use OMSI and R. Instructions are in the document.
