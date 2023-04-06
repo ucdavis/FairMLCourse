@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 6, 0955:**
+
+I added an example line of output for the homework, and a note on holdout sets.
+
 **April 6, 0900:**
 
 As noted earlier, do not use any packages that do not ship with base-R. (Check with R on CSIF if you are unsure.) But anything that does ship with base-R is fine.
