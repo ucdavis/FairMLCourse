@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 6, 0900:**
+
+As noted earlier, do not use any packages that do not ship with base-R. (Check with R on CSIF if you are unsure.) But anything that does ship with base-R is fine.
+
+In Hwk 1, you probably would find the **combn()** function useful.
+
 **April 5, 2035:**
 
 I've now posted Homework 1 on our class GitHub repo.
