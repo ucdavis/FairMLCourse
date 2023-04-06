@@ -11,6 +11,8 @@ But neither is a screen shot useful, in many cases. Instead, in order to get hel
 
 Running **script** causes a new shell to be launched. You then run whatever commands led to the error, e.g. running python to launch OMSI.  Whatever OMSI prints will be shown, including error messages.
 
+If you are adventurous, you might even run the OMSI client in debug mode (python -m pdb appname args).
+
 When you are done, exit from that shell, then send us the typescript output file; it has a record of whatever was written to the shell. 
 
 If you don't have a Unix-family system, you can run on CSIF. If you are not physically there, you'll need to use the -Y option if your error is on a GUI app, such as OMSI.
