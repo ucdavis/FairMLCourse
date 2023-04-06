@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 5, 2035:**
+
+I've now posted Homework 1 on our class GitHub repo.
+
 **April 5, 1735:**
 
 A student sent me e-mail, saying simply that his try to run OMSI failed. Well, of course, that is not useful information. :-)
