@@ -66,7 +66,7 @@ we giving up by NOT using S?)
   accuracy, the less fairness value there is in omitting S from 
   prediction model)
 
-The return value will be a data frame with 3 columns.  The first will be
+The return value will be a data frame with 4 columns.  The first will be
 a character string consisting of the names of the given feature set.
 The second will be the prediction accuracy for (a), then the ones for
 (b) and (c).  There will be one row in the d.f. for each feature set.
@@ -82,7 +82,7 @@ investigated.
   case.  Have your code sense this by using **is.numeric()** or **is.factor()**.
   Use the test accuracy values they return.
 
-### The geLin() and qeLogit() functions
+### The qeLin() and qeLogit() functions
 
 We'll be discussing these a few lectures from now, but for now here is
 what you need to know:
@@ -100,8 +100,11 @@ what you need to know:
 
     P(Y = 1 | X) = 1 / [1 + exp{-{&beta;<sub>0</sub> + &beta;<sub>0</sub> + X<sub>1</sub> + ... + &beta;<sub>p</sub> X<sub>p</sub>}]
 
-   Since the function 1 / [1 + exp(-t)] is in (0,1), it's good for
+   Since the function l(t) = 1 / [1 + exp(-t)] is in (0,1), it's good for
    modeling a probability, and then we plug a linear form into that.
+   Since l(t) is increasing in t, the larger the value of the linear
+   form, the higher the resulting probability.
+
    (Some say the "log-odds ratio is linear"; true, but I believe it
    obscures the fact that we are working with a probability.
 
@@ -109,8 +112,8 @@ what you need to know:
    will be converted to 1 and 0.
 
 * For multiclass Y, **qeLogit()** does k separate dichotomous runs.
-  Then to predict a new case, it finds the estimated P(Y = i | X), i =
-  1,...,k then does arg max.
+  Then to predict a new case, it finds the estimated P(Y = class i | X),
+  i = 1,...,k then does arg max.
 
 Example:
 
@@ -124,7 +127,7 @@ Example:
 4 50.19951 zzzOther 100   1       0      52
 5 51.18112 zzzOther 100   2     160       1
 6 57.70413 zzzOther 100   1       0       0
- qeLin(pef,'wageinc')$testAcc
+> qeLin(pef,'wageinc')$testAcc
 holdout set has  1000 rows
 [1] 24584.78
 > qeLogit(pef,'sex')$testAcc
