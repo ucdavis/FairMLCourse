@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 6, 2020:**
+
+My op-ed on ChatGPT and statistics is now out. You may find it interesting.
+
 **April 6, 0955:**
 
 I added an example line of output for the homework, and a note on holdout sets.
