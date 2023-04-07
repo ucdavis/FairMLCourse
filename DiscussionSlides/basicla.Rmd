@@ -1,0 +1,84 @@
+---
+title: "basicla"
+author: "lyy"
+date: '2023-04-05'
+output: html_document
+---
+
+```{r}
+# Matrix Multiplication
+A <- matrix(c(1, 2, 3, 4), nrow = 2, ncol = 2)
+B <- matrix(c(5, 6, 7, 8), nrow = 2, ncol = 2)
+
+A
+
+B
+
+C <- A %*% B
+
+C
+```
+```{r}
+# Determinant
+A
+det(A)
+```
+```{r}
+# Inverse
+A_inv <- solve(A)
+
+A_inv
+```
+```{r}
+# eigenvalues and eigenvectors
+eig <- eigen(A)
+
+# View the eigenvalues
+eig$values
+
+# View the eigenvectors
+eig$vectors
+```
+```{r}
+# row bind opeartion
+D <- rbind(A, B)
+
+D
+```
+
+```{r}
+# check by multiplying, if we will get the identity matrix
+A %*% A_inv
+```
+```{r}
+# solve a system of linear function
+A <- matrix(c(2, 3, 1, 4), nrow = 2, ncol = 2)
+b <- c(5, 6)
+
+A
+# solve the system of equations
+x <- solve(A, b)
+
+x
+```
+```{r}
+# Computing the Rank
+A <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+
+# Compute the rank of the matrix
+R <- qr(A)$rank
+
+# View the result
+R
+```
+```{r}
+# singular value decomposition
+A <- matrix(c(1, 2, 3, 4), nrow = 2, ncol = 2)
+
+# Compute the SVD of the matrix
+S <- svd(A)
+
+# View the result
+S
+```
+

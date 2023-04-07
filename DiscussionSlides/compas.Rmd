@@ -1,0 +1,104 @@
+---
+title: "compas"
+author: "lyy"
+date: '2023-04-02'
+output: html_document
+---
+
+```{r}
+getwd()
+load('data/compas.rda')
+dat=compas
+#get the varibale 
+names(dat)
+dat
+
+```
+
+
+```{r}
+# print out the columns
+colnames(dat)
+```
+
+
+```{r}
+#
+packageVersion("pillar")
+nrow(dat)
+ncol(dat)
+
+```
+```{r}
+dat$length_of_stay <- as.numeric(dat$c_jail_out - dat$c_jail_in)
+dat$length_of_stay
+correlation <- cor(dat$length_of_stay, dat$decile_score)
+correlation
+# Higher COMPAS scores are slightly correlated with a longer length of stay.
+```
+
+```{r}
+summary(dat$age)
+```
+
+```{r}
+summary(dat$race)
+```
+
+
+```{r}
+xtabs(~ sex + race, data=dat)
+```
+```{r}
+summary(dat$sex)
+```
+```{r}
+nrow(filter(dat, two_year_recid == 'Yes'))
+```
+```{r}
+nrow(filter(dat, two_year_recid == 'Yes')) / nrow(dat) * 100
+```
+
+
+```{r}
+# Judges are often presented with two sets of scores from the Compas system -- one that classifies people into High, Medium # and Low risk, and a corresponding decile score. There is a clear downward trend in the decile scores as those scores increase for white defendants.
+install.packages("gridExtra")
+library(ggplot2)
+library(grid)
+library(gridExtra)
+pblack <- ggplot(data=filter(dat, race =="African-American"), aes(ordered(decile_score))) + 
+          geom_bar() + xlab("Decile Score") +
+          ylim(0, 650) + ggtitle("Black Defendant's Decile Scores")
+pwhite <- ggplot(data=filter(dat, race =="Caucasian"), aes(ordered(decile_score))) + 
+          geom_bar() + xlab("Decile Score") +
+          ylim(0, 650) + ggtitle("White Defendant's Decile Scores")
+grid.arrange(pblack, pwhite,  ncol = 2)
+```
+```{r}
+xtabs(~ decile_score + race, data=dat)
+```
+
+
+```{r}
+# Violent recidivism
+summary(dat$v_decile_score)
+```
+```{r}
+nrow(filter(dat, two_year_recid == 'Yes')) / nrow(dat) * 100
+```
+
+```{r}
+nrow(filter(dat, two_year_recid == 'Yes'))
+```
+```{r}
+library(grid)
+library(gridExtra)
+pblack <- ggplot(data=filter(dat, race =="African-American"), aes(ordered(v_decile_score))) + 
+          geom_bar() + xlab("Violent Decile Score") +
+          ylim(0, 700) + ggtitle("Black Defendant's Violent Decile Scores")
+pwhite <- ggplot(data=filter(dat, race =="Caucasian"), aes(ordered(v_decile_score))) + 
+          geom_bar() + xlab("Violent Decile Score") +
+          ylim(0, 700) + ggtitle("White Defendant's Violent Decile Scores")
+grid.arrange(pblack, pwhite,  ncol = 2)
+```
+
