@@ -1,0 +1,102 @@
+---
+title: "fairml"
+author: "lyy"
+date: '2023-04-02'
+output: html_document
+---
+
+
+```{r}
+getwd()
+load('fairml/data/german.credit.rda')
+riskdat=german.credit
+riskdat
+```
+
+
+```{r}
+library(ggplot2)
+
+#Checking the Data
+head(riskdat)
+tail(riskdat)
+str(riskdat)
+summary(riskdat)
+#describe(riskdat)
+
+#Making some changes to data
+colnames(riskdat)[1] <- "index"
+
+#Plotting the data
+ggplot(riskdat, aes(Age)) + geom_histogram(binwidth=4, colour="black", fill="green") +
+  labs(x= "Age",y= "Frequency" , title = "Plot of Age")
+```
+
+
+```{r}
+ggplot(riskdat, aes(Gender) ) + geom_bar(aes(fill = as.factor(riskdat$Gender))) + 
+  scale_fill_discrete(name="Gender",
+                      labels=c( "Female","Male")) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  labs(x= "Gender",y= "Frequency" , title = "Plot of Gender")
+```
+
+
+```{r}
+ggplot(riskdat, aes(Job) ) + geom_bar(aes(fill = as.factor(riskdat$Job))) + 
+  scale_fill_discrete(name="Job Type",
+                      labels=c( "Unskilled and Non-Resident","Unskilled and Resident", "Skilled", "Highly Skilled")) +
+
+
+
+
+theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  labs(x= "Level of Job",y= "Frequency" , title = "Plot of Job")
+```
+
+
+```{r}
+ggplot(riskdat, aes(Housing) ) + geom_bar(aes(fill = as.factor(riskdat$Housing))) + 
+  scale_fill_discrete(name="Housing",
+                      labels=c( "Free","Own", "Rent")) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  labs(x= "Housing",y= "Frequency" , title = "Plot of Housing")
+```
+
+
+```{r}
+ggplot(riskdat, aes(Savings_bonds) ) + geom_bar(aes(fill = as.factor(riskdat$Savings_bonds)))  + 
+  scale_fill_discrete(name="Savings_bonds",
+                      labels=c( "Little","Moderate", "Quite Rich", "Rich", "NA"))  +
+  labs(x= "Savings_bonds",y= "Frequency" , title = "Plot of Savings_bonds")
+```
+
+
+```{r}
+ggplot(riskdat, aes(Account_status) ) + geom_bar(aes(fill = as.factor(riskdat$Account_status))) + 
+  scale_fill_discrete(name="Account_status",
+                      labels=c( "Little","Moderate", "Rich")) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  labs(x= "Account_status",y= "Frequency" , title = "Plot of Account_status")
+
+hist(riskdat$Credit.amount, main = "Histogram of Credit Amount", xlab = "Credit Amount", ylab = "Frequency", col = "green", border = "black" )
+```
+
+
+```{r}
+ggplot(riskdat, aes(Duration)) + geom_histogram(binwidth=4, colour="black", fill="green") +
+  labs(x= "Duration in Months",y= "Frequency" , title = "Plot of Duration")
+
+ggplot(riskdat, aes(Purpose) ) + geom_bar(aes(fill = as.factor(riskdat$Purpose))) + 
+  scale_fill_discrete(name="Purpose of Loan",
+                      labels=c( "Business","Car", "Domestic Appliances","Education","Furniture/Equipment","Radio/TV","Repairs","Vacation/Others")) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  labs(x= "Purpose of Loan",y= "Frequency" , title = "Plot of Loan Purpose")
+
+```
+
