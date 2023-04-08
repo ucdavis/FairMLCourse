@@ -1,16 +1,24 @@
 
-# The Two Main Ideas in Statistical Inference
+# The Two Central Ideas in Statistical Inference
 
 [Prof. Norm Matloff](http://heather.cs.ucdavis.edu/matloff.html )
 
 Contrary to the impression many students in high school AP Statistics
 courses may have, statistics is a very rich. intellectually stimulating
-field.  Yet, in a sense it boils down to just two concepts, bias and
-variance (bias here is not what you think!).
+field.  Yet, in a sense the core issues boil down to just two concepts,
+bias and variance 
+
+(**Note:  bias here is not what you may be thinking!**).
+
+Appreciation of these ideas is important for any course, but especially
+for statistics/data science courses serving as "general education."
+Statistics is important to one's status as an informed consumer/citizen,
+and the"graduate" of such a course should be equipped to recognize these
+two central ideas whenever he/she views data.
 
 ## Intended audience 
 
-Students of statistics, at all levels.W
+Students of statistics, at all levels, and their instructors.
 
 ## Bias
 
@@ -49,3 +57,6 @@ This casual terminology can be reconciled with a formal statistical
 formulation, though we will not pursue this here.  We simply define bias
 as "not using relevant covariates."
 
+## Variance
+
+## The "how" part
