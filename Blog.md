@@ -3,6 +3,13 @@
 
 **Spring 2023**
 
+**April 7, 2100:**
+
+Office hours, Locations
+
+NM: M 2-4, 3053 Kemper <br>
+YYL: MW 5-6, 55 Kemper
+
 **April 6, 2020:**
 
 My op-ed on ChatGPT and statistics is now out. You may find it interesting.
