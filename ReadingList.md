@@ -27,21 +27,20 @@ proportions*, e.g. difference between proportion of x among y vs.
 proportion of y among x.  Amazingly, many people lack this, and in fact,
 it can indeed be very subtle.  
 
-* [serious conceptual errors](https://twitter.com/jsm2334/status/1462573183970824201) made regarding Covid-19
-
 * ["natural" solution to Monty Hall problem](https://heather.cs.ucdavis.edu/ProbStatDSBook/MontyHall.pdf)
 
    If one carefully names all the events, the problem is actually easy,
    straightforward.
 
-* [Good for Men, Good for Women, Bad for People](https://www.researchgate.net/publication/11608762_)
-
-   Title says it all.
-
 * [UCB admissions discrimination lawsuit](https://rstudio-pubs-static.s3.amazonaws.com/300645_f342587e10674aebafd57e94d1527f20.html)
 
     Could Berkeley, famously liberal, have been discriminating
     against female applicants for grad school?
+
+* [Good for Men, Good for Women, Bad for People](https://www.researchgate.net/publication/11608762_)
+
+   Title says it all.
+
 
 ### Machine Learning Methods, Overfitting, Statistics
 
