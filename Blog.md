@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 8, 2305:**
+
+I've removed one item from our readings list (I may add one more later in the course), and altered the order. This is in the "proportions" section.
+
+Related note: As I mentioned in class, I recommend that you read each item AFTER I discuss it in class.
+
 **April 8, 1410:**
 
 If you added the course once the quarter started, please note [our class GitHub repo](https://github.com/ucdavis/FairMLCourse). Read the syllabus, and the linked information, especially the class procedures. Also, please note that it is required that you read the class blog every day.
