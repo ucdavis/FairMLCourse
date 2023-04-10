@@ -3,6 +3,19 @@
 
 **Spring 2023**
 
+**April 10, 1020:**
+
+This post is about graphics.
+
+* Please install the **vcd** package on your laptop. It will be used in tomorrow's lecture (and thus may be used on quizzes).
+* In Homework and the Term Project, you will need to do graphics in R. I have the following suggestions:
+
+- Base-R, i.e. built-in
+- **ggplot2**; this is the most popular one
+- **lattice**; this is my favorite, more straightforward interface and IMO more vivid colors
+
+
+
 **April 9, 2355:**
 
 A student contacted me re trouble with OMSI. I then tried it myself, and got the same error.
