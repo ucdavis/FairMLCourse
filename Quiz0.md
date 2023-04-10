@@ -17,7 +17,7 @@ basic skills in R.
   submit your quiz.  Make SURE to do a test run first, playing the role
 of both the student and instructor, as explained in the OMSI docs. 
 
-* This will be due 11:59 pm, April 11.  The TA will start the OMSI
+* This will be due 11:59 pm, April 13.  The TA will start the OMSI
   server on April 6 (machine and port to be announced).  You may submit
 at any time between April 6 and 11.  Don't leave it for the last minute;
 keep in mind my slogan, "Computers never work." :-)
