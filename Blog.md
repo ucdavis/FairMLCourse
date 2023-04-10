@@ -3,6 +3,14 @@
 
 **Spring 2023**
 
+**April 9, 2355:**
+
+A student contacted me re trouble with OMSI. I then tried it myself, and got the same error.
+
+I then checked to confirm that I was on the VPN. Turns out I wasn't!  I had connected earlier, so my ssh was still intact, but apparently my connection to the VPN had expired and thus I could not make new connections.  I renewed my VPN connection, and it all worked fine!
+
+BTW, I wasn't sure about the port number on pc11 that the server was running on, so I ssh'ed into pc11, and ran "ps -ax". I saw the server was running on port 3000.
+
 **April 8, 2305:**
 
 I've removed one item from our readings list (I may add one more later in the course), and altered the order. This is in the "proportions" section.
