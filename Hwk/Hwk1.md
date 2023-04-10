@@ -1,7 +1,7 @@
 
 # Homework 1
 
-## Due Wednesday, April 17, 11:59 pm
+## Due Monday, April 17, 11:59 pm
 
 ## Problem 1
 

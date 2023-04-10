@@ -10,11 +10,19 @@ This post is about graphics.
 * Please install the **vcd** package on your laptop. It will be used in tomorrow's lecture (and thus may be used on quizzes).
 * In Homework and the Term Project, you will need to do graphics in R. I have the following suggestions:
 
-- Base-R, i.e. built-in
-- **ggplot2**; this is the most popular one
-- **lattice**; this is my favorite, more straightforward interface and IMO more vivid colors
+    - Base-R, i.e. built-in
+    - **ggplot2**; this is the most popular one
+    - **lattice**; this is my favorite (IMO more straightforward interface and more vivid colors)
 
+There are tons of tutorials on the Web.  I recommend that you use one
+that starts out with examples right away, instead of first presenting
+general syntax.
 
+Note that you must also install [qeML](https://github.com/matloff/qeML).
+It will be used throughout the course, including on quizzes.  We haven't
+covered ML yet, but there are many built-in datasets that may be used.
+Install **qeML** by first installing **devtools**, and then using
+**install_github()** from that package.
 
 **April 9, 2355:**
 
