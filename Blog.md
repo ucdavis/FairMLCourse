@@ -3,6 +3,14 @@
 
 **Spring 2023**
 
+**April 10, 1305:**
+
+We appear to be having weird technical problems, ones I've never encountered before.
+
+1.  Several students have told me that they are blocked from e-mailing the TA.  Please try using GMail for sending and receiving messages for this class, as it is the official e-mail system for UC.  Let me know if you still have problems.
+
+2.  Though many students have successfully submitted Quiz 0 from within OMSI, some are reporting errors.  Among other things, there seems to be some confusion as to whether the server is on port 3000 or 4000.  I have a query into Yuyi (our TA) on this.
+
 **April 10, 1020:**
 
 This post is about graphics.
