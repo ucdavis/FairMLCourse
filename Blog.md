@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 10, 1325:**
+
+If you are having trouble with OMSI, please try accessing the server I just launched; p12, port 2000 (use any exam code). This is NOT the actual quiz, just the example questions that come with OMSI, but please try so we can isolate your problem.
+
+**I AM EXTENDING THE DUE DATE FOR QUIZ 0.**
+
 **April 10, 1305:**
 
 We appear to be having weird technical problems, ones I've never encountered before.
