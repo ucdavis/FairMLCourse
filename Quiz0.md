@@ -74,7 +74,7 @@ finds and prints the mean **mpg** among cars having 6 or 8 cyclinders.
 adds a new column, the horsepower/weight ratio, and prints the entire
 new dataset, now 12 columns rather than 11.
 
-**Question 4:** Write code that prints: the proportion of foreign workers
-who have good credit; the proportion of workers with good credit who are
+**Question 4:** In the **german.credit** data, write code that prints: the proportion of
+foreign workers who have good credit; the proportion of workers with good credit who are
 foreign; the proportion of foreign workers; and the proportion of workers
 who have good credit.  (Print a 4-element vector.)
