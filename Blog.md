@@ -3,6 +3,23 @@
 
 **Spring 2023**
 
+**April 10, 1920:**
+
+One of the major advantages of R is its huge repository of user-contributed software specific to data science, [CRAN](https://cran.r-project.org/). The **fairml** package is there, and you can install it by running
+
+``` rc
+> install.packages('fairml')
+```
+
+(There is another function to call, from the *devtools** package, to install packages from GitHub repos. Install **devtools** from CRAN first.)
+
+The following code, best run from within an R function, loads the **german.credit** data:
+
+``` rc
+library(fairml)
+data(german.credit
+```
+
 **April 10, 1325:**
 
 If you are having trouble with OMSI, please try accessing the server I just launched; p12, port 2000 (use any exam code). This is NOT the actual quiz, just the example questions that come with OMSI, but please try so we can isolate your problem.
