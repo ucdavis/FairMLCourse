@@ -17,7 +17,7 @@ The following code, best run from within an R function, loads the **german.credi
 
 ``` rc
 library(fairml)
-data(german.credit
+data(german.credit)
 ```
 
 **April 10, 1325:**
