@@ -11,7 +11,7 @@ One of the major advantages of R is its huge repository of user-contributed soft
 > install.packages('fairml')
 ```
 
-(There is another function to call, from the *devtools** package, to install packages from GitHub repos. Install **devtools** from CRAN first.)
+(There is another function to call, from the **devtools** package, to install packages from GitHub repos. Install **devtools** from CRAN first.)
 
 The following code, best run from within an R function, loads the **german.credit** data:
 
