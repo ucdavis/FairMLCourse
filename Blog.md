@@ -3,6 +3,36 @@
 
 **Spring 2023**
 
+**April 11, 1935:**
+
+If you are having trouble installing the packages, please contact me soon. Here is some information beyond what is in my R tutorial.
+
+* Installed packages reside on your own laptop, not on the OMSI server.       
+                                                                                
+* One typically specifies a directory in which one wishes to install packages.  I always use **~/R**, i.e. R in my home directory.                       
+* When later calling **library()**, again R needs to know where your packages are.  You can specify that with the **lib.loc** argument.                  
+                                                                                
+* R has a startup file, *~/.Rprofile*.  In mine here on my machine at home, I have the line                                                                  
+ ``` rc                                                                              
+.libPaths("/home/nm/R")   
+```
+                                                                                
+(where **~/R** is **/home/nm/r**).  Both **install.packages()** and **library()** use this      
+startup file, so I need not specify it in my calls to those functions.  E.g. I 
+installed **fairml** by typing                                                     
+ 
+ ``` rc
+install.packages('fairml')                                                      
+```
+
+and subsequently, run                                                           
+ 
+ ``` rc
+library(fairml)    
+```
+                                                                                
+in any R session in which I need it.           
+
 **April 11,1930:**
 
 Our TA, Yuyi, will be notifying you of your Homework group memberships very soon. Sorry for the delay.
