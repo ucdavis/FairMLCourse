@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 11, 2155:**
+
+Important announcement about package installation etc. coming up in a few minutes...
+
 **April 11, 1935:**
 
 If you are having trouble installing the packages, please contact me soon. Here is some information beyond what is in my R tutorial.
