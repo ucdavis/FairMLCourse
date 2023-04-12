@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 12, 1615:**
+
+The second problem on Hwk 1 is now ready! Start NOW; the actual number of lines of code will not be very large, but trust me--there are a lot of points in which you and your teammates will say, "Wait a minute. HOW do we do this?"
+
+There are also several Extra Credit problems.
+
 **April 12, 1110:**
 
 We will use this solution regarding the packages:
