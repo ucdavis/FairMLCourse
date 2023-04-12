@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 11,1930:**
+
+Our TA, Yuyi, will be notifying you of your Homework group memberships very soon. Sorry for the delay.
+
 **April 11, 0950:**
 
 Please install the **qeML** package as soon as possible, and let me know if you have any trouble. It is not on CRAN yet, so you cannot use **install.packages()** (which you CAN do for **fairml**, **vcd** etc.). Note that all the required packages must be on your laptops for the quizzes, which will begin next week.
