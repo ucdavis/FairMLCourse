@@ -7,7 +7,7 @@
 
 If you are having trouble installing the packages, please contact me soon. Here is some information beyond what is in my R tutorial.
 
-* Installed packages reside on your own laptop, not on the OMSI server.       
+* Installed packages reside on your own laptop, not on the OMSI server. (Nor will they be on CSIF; and note that you will not be using CSIF during quizzes.)   
                                                                                 
 * One typically specifies a directory in which one wishes to install packages.  I always use **~/R**, i.e. R in my home directory.                       
 * When later calling **library()**, again R needs to know where your packages are.  You can specify that with the **lib.loc** argument.                  
