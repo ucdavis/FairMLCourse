@@ -1,7 +1,35 @@
 
 # Homework 1
 
-## Due Monday, April 17, 11:59 pm
+## Due Monday, April 24, 11:59 pm
+
+## Submitting homework (here and in future assignments)
+
+Your file names must be named **Problem1.R**, **Problem2.R** and so on.
+
+Package your files in **.tar** file.  E.g. on CSIF (Linux), Mac OS
+  etc. 
+
+```
+$ tar cf your_group_member_email_addrs.tar names_of_your_files
+```
+
+Be sure to follow the file-naming rules in our syllabus exactly.  There
+should be NO subdirectories created.  Check by unpacking,
+
+```
+$ tar xf your_group_member_email_addrs.tar
+```
+
+On CSIF, use the **handin** app. to submit your file to Yuyi:
+
+```
+$ handin lyy ecs189b your_group_member_email_addrs.tar
+```
+
+This says, "Add my file **xxx.tar** to lyy's **ecs189b** handin
+directory." (You can check that it got there; see the **handin** man
+page.)
 
 ## Problem 1
 
@@ -165,3 +193,25 @@ the random holdout set.  But it seems using gender in addition to age
 and occupation did improve prediction somewhat, but that those two
 variables do have substantial correlation with S.
 
+## Problem 2
+
+Here you will write an R mini-package (just a single function, but very
+useful)
+
+### Goal
+
+Simpson's Paradox (SP) describes a situatipn in which, roughly,
+
+> relation(X,Y) is + but relation(X,Y|Z) is -, or vice versa
+
+Usually, e.g. in the **UCBAdmissions** data, the variables X, Y and Z
+are all categorical.  Your code here will explore whether SP holds for
+numeric X and Y (and maybe Z).
+
+### Requirements
+
+The call form for your function will be
+
+``` r
+numericSimpson(data,xName,yName,zName,numZvals=NULL)
+```
