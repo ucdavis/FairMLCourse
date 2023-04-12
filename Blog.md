@@ -3,6 +3,25 @@
 
 **Spring 2023**
 
+**April 11, 2320:**
+
+OK, here is the situation regarding package installation.
+
+First and foremost, don't worry about it.  We will make it work for everyone, probably by running (in some form) on CSIF.  Remember, the primary focus on the course is on the algorithms themselves; we write code only as a means of illustrating the algorithms.
+
+Now, having said that, I'll explain the problem.
+
+R is an interpreted language; one does not compile it.  However, it is possible to write a function in C/C++ that one calls from R.  This is very common, for increased program speed.
+
+But that opens the possibility of incompatility issues at the compiler level.  It turns out that the 'fairml' package is a good example.  I've been using it for a long time, on both Linux and Mac platforms, with no problem.  But when I tried installing it today on CSIF, a Linux system, the installation failed, with a gcc compiler error.
+
+So, we won't be able to use 'fairml', even on CSIF, but it's not crucial that we use this package.  And we can use the data from 'fairml' separately, without installing it.  I'll arrange that, but if you want to get the data yourself, download it from
+[https://cran.r-project.org/src/contrib/fairml_0.7.tar.gz](here).
+
+Unpack, and then go to the data/ directory.  Load the files into R using the R 'load' function.
+
+I have several solutions in mind, and will get back to you on this.  But again, don't worry about it; **we WILL work it out, in a solution that will work well for everyone.**
+
 **April 11, 2155:**
 
 Important announcement about package installation etc. coming up in a few minutes...
