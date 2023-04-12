@@ -3,6 +3,13 @@
 
 **Spring 2023**
 
+**April 12, 1110;**
+
+We will use this solution regarding the packages:
+
+* On Quizzes, I will simply not have you run code involving the packages. Note that I might still ask about the packages, in a textfile-answer question, but not in an R-code-answer question. I will make the datasets for the packages available for you separately, and R-code-answer questions might use them.
+* On Homework, I will make all required packages available on CSIF. (Each of you has a CSIF account, by virtue of being enrolled in an ECS class.) You can run your code there if you have trouble installing them on your own machine. Note that you can ssh in to CSIF remotely.
+
 **April 11, 2320:**
 
 OK, here is the situation regarding package installation.
