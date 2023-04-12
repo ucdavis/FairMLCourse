@@ -12,7 +12,7 @@ If you are having trouble installing the packages, please contact me soon. Here 
 * One typically specifies a directory in which one wishes to install packages.  I always use **~/R**, i.e. R in my home directory.                       
 * When later calling **library()**, again R needs to know where your packages are.  You can specify that with the **lib.loc** argument.                  
                                                                                 
-* R has a startup file, *~/.Rprofile*.  In mine here on my machine at home, I have the line                                                                  
+* R has a startup file, **~/.Rprofile**.  In mine here on my machine at home, I have the line                                                                  
  ``` rc                                                                              
 .libPaths("/home/nm/R")   
 ```
