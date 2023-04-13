@@ -3,6 +3,15 @@
 
 **Spring 2023**
 
+**April 12, 1805:**
+
+Note that though the Quizzes will not ask you to write code using the packages, there definitely will be "R code answer" questions, i.e. you WILL be asked to write R code.
+
+In that light, note that except for **fourfold()**, the functions in the UCB data analysis that we covered on Tuesday are all from base-R, not from the **vcd** package.  Make sure you are able to use them in quizzes. 
+
+To familiarize yourself with those functions, devise little experiments 
+with them.  Let me know if you have any questions at all about them.
+
 **April 12, 1615:**
 
 The second problem on Hwk 1 is now ready! Start NOW; the actual number of lines of code will not be very large, but trust me--there are a lot of points in which you and your teammates will say, "Wait a minute. HOW do we do this?"
