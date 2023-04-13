@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**April 13, 0955:**
+
+Keep in mind that you will need to have copies of our readings for use in the Quizzes. You may bring paper copies if you wish, or you coulc make use of OMSI's PDF viewing capability. In the latter case, I would suggest that you merge PDF versions of the readings (whichever ones are covered by the given quiz) into a single PDF file. One way to do this on CSIF would be to run
+
+```
+gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=outputfilename.pdf -dBATCH file1name file2name etc.
+```
+
+BTW, to make a PDF version of a given reading item, one easy way is to view it in the Chrome browser (available for all OSs) and hit Print. Choose "Save to PDF."
+
 **April 12, 1840:**
 
 Yuyi tells me that some students are worried that they won't be able to do Question 4 on Quiz 0, due to lack of access to the **fairml** package. Actually, this was already discussed in the blog post of April 11, 2320! **PLEASE** read the blog--or in the words of the old marriage ceremony, "forever hold your peace." :-) Also, don't signal to Yuyi that you are a non-blog reader, very embarrassing. :-)
