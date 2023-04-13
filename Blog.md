@@ -3,6 +3,17 @@
 
 **Spring 2023**
 
+**April 12, 1840:**
+
+Yuyi tells me that some students are worried that they won't be able to do Question 4 on Quiz 0, due to lack of access to the **fairml** package. Actually, this was already discussed in the blog post of April 11, 2320! **PLEASE** read the blog--or in the words of the old marriage ceremony, "forever hold your peace." :-) Also, don't signal to Yuyi that you are a non-blog reader, very embarrassing. :-)
+
+If you get 0 credit on a certain Quiz problem because it required reading the blog, and you didn't do that reading, then there will be no regrade; 0 is 0. Same for the Homework.
+
+I also said that I would make available to you all the datasets, separately from package installation. In response to Yuyi's message, I've now started, pushing a new **Data/** directory to our repo. You'll see **fairml** there.
+
+Note that these files have '.rda' suffixes in their names. Load them by calling R's **load()** function. I recommend setting **verboose = TRUE**. Sometimes people use '.RData' for the same thing.
+
+
 **April 12, 1805:**
 
 Note that though the Quizzes will not ask you to write code using the packages, there definitely will be "R code answer" questions, i.e. you WILL be asked to write R code.
