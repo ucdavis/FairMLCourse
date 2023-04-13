@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 13, 1010:**
+
+On Quizzes, it will be expected that you will already have starting thinking about pending Homework assignments. For example, Hwk 1 mentions R's **cor()** function, and next week's Quiz might ask you to use it.
+
 **April 13, 0955:**
 
 Keep in mind that you will need to have copies of our readings for use in the Quizzes. You may bring paper copies if you wish, or you coulc make use of OMSI's PDF viewing capability. In the latter case, I would suggest that you merge PDF versions of the readings (whichever ones are covered by the given quiz) into a single PDF file. One way to do this on CSIF would be to run
