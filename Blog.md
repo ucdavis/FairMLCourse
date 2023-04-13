@@ -3,6 +3,155 @@
 
 **Spring 2023**
 
+**April 12, 1805:**
+
+Note that though the Quizzes will not ask you to write code using the packages, there definitely will be "R code answer" questions, i.e. you WILL be asked to write R code.
+
+In that light, note that except for **fourfold()**, the functions in the UCB data analysis that we covered on Tuesday are all from base-R, not from the **vcd** package.  Make sure you are able to use them in quizzes. 
+
+To familiarize yourself with those functions, devise little experiments 
+with them.  Let me know if you have any questions at all about them.
+
+**April 12, 1615:**
+
+The second problem on Hwk 1 is now ready! Start NOW; the actual number of lines of code will not be very large, but trust me--there are a lot of points in which you and your teammates will say, "Wait a minute. HOW do we do this?"
+
+There are also several Extra Credit problems.
+
+**April 12, 1110:**
+
+We will use this solution regarding the packages:
+
+* On Quizzes, I will simply not have you run code involving the packages. Note that I might still ask about the packages, in a textfile-answer question, but not in an R-code-answer question. I will make the datasets for the packages available for you separately, and R-code-answer questions might use them.
+* On Homework, I will make all required packages available on CSIF. (Each of you has a CSIF account, by virtue of being enrolled in an ECS class.) You can run your code there if you have trouble installing them on your own machine. Note that you can ssh in to CSIF remotely.
+
+**April 11, 2320:**
+
+OK, here is the situation regarding package installation.
+
+First and foremost, don't worry about it.  We will make it work for everyone, probably by running (in some form) on CSIF.  Remember, the primary focus on the course is on the algorithms themselves; we write code only as a means of illustrating the algorithms.
+
+Now, having said that, I'll explain the problem.
+
+R is an interpreted language; one does not compile it.  However, it is possible to write a function in C/C++ that one calls from R.  This is very common, for increased program speed.
+
+But that opens the possibility of incompatility issues at the compiler level.  It turns out that the 'fairml' package is a good example.  I've been using it for a long time, on both Linux and Mac platforms, with no problem.  But when I tried installing it today on CSIF, a Linux system, the installation failed, with a gcc compiler error.
+
+So, we won't be able to use 'fairml', even on CSIF, but it's not crucial that we use this package.  And we can use the data from 'fairml' separately, without installing it.  I'll arrange that, but if you want to get the data yourself, download it from
+[https://cran.r-project.org/src/contrib/fairml_0.7.tar.gz](here).
+
+Unpack, and then go to the data/ directory.  Load the files into R using the R 'load' function.
+
+I have several solutions in mind, and will get back to you on this.  But again, don't worry about it; **we WILL work it out, in a solution that will work well for everyone.**
+
+**April 11, 2155:**
+
+Important announcement about package installation etc. coming up in a few minutes...
+
+**April 11, 1935:**
+
+If you are having trouble installing the packages, please contact me soon. Here is some information beyond what is in my R tutorial.
+
+* Installed packages reside on your own laptop, not on the OMSI server. (Nor will they be on CSIF; and note that you will not be using CSIF during quizzes.)   
+                                                                                
+* One typically specifies a directory in which one wishes to install packages.  I always use **~/R**, i.e. R in my home directory.                       
+* When later calling **library()**, again R needs to know where your packages are.  You can specify that with the **lib.loc** argument.                  
+                                                                                
+* R has a startup file, **~/.Rprofile**.  In mine here on my machine at home, I have the line                                                                  
+ ``` rc                                                                              
+.libPaths("/home/nm/R")   
+```
+                                                                                
+(where **~/R** is **/home/nm/r**).  Both **install.packages()** and **library()** use this      
+startup file, so I need not specify it in my calls to those functions.  E.g. I 
+installed **fairml** by typing                                                     
+ 
+ ``` rc
+install.packages('fairml')                                                      
+```
+
+and subsequently, run                                                           
+ 
+ ``` rc
+library(fairml)    
+```
+                                                                                
+in any R session in which I need it.           
+
+**April 11,1930:**
+
+Our TA, Yuyi, will be notifying you of your Homework group memberships very soon. Sorry for the delay.
+
+**April 11, 0950:**
+
+Please install the **qeML** package as soon as possible, and let me know if you have any trouble. It is not on CRAN yet, so you cannot use **install.packages()** (which you CAN do for **fairml**, **vcd** etc.). Note that all the required packages must be on your laptops for the quizzes, which will begin next week.
+
+**April 10, 1920:**
+
+One of the major advantages of R is its huge repository of user-contributed software specific to data science, [CRAN](https://cran.r-project.org/). The **fairml** package is there, and you can install it by running
+
+``` rc
+> install.packages('fairml')
+```
+
+(There is another function to call, from the **devtools** package, to install packages from GitHub repos. Install **devtools** from CRAN first.)
+
+The following code, best run from within an R function, loads the **german.credit** data:
+
+``` rc
+library(fairml)
+data(german.credit)
+```
+
+**April 10, 1325:**
+
+If you are having trouble with OMSI, please try accessing the server I just launched; p12, port 2000 (use any exam code). This is NOT the actual quiz, just the example questions that come with OMSI, but please try so we can isolate your problem.
+
+**I AM EXTENDING THE DUE DATE FOR QUIZ 0.**
+
+**April 10, 1305:**
+
+We appear to be having weird technical problems, ones I've never encountered before.
+
+1.  Several students have told me that they are blocked from e-mailing the TA.  Please try using GMail for sending and receiving messages for this class, as it is the official e-mail system for UC.  Let me know if you still have problems.
+
+2.  Though many students have successfully submitted Quiz 0 from within OMSI, some are reporting errors.  Among other things, there seems to be some confusion as to whether the server is on port 3000 or 4000.  I have a query into Yuyi (our TA) on this.
+
+**April 10, 1020:**
+
+This post is about graphics.
+
+* Please install the **vcd** package on your laptop. It will be used in tomorrow's lecture (and thus may be used on quizzes).
+* In Homework and the Term Project, you will need to do graphics in R. I have the following suggestions:
+
+    - Base-R, i.e. built-in
+    - **ggplot2**; this is the most popular one
+    - **lattice**; this is my favorite (IMO more straightforward interface and more vivid colors)
+
+There are tons of tutorials on the Web.  I recommend that you use one
+that starts out with examples right away, instead of first presenting
+general syntax.
+
+Note that you must also install [qeML](https://github.com/matloff/qeML).
+It will be used throughout the course, including on quizzes.  We haven't
+covered ML yet, but there are many built-in datasets that may be used.
+Install **qeML** by first installing **devtools**, and then using
+**install_github()** from that package.
+
+**April 9, 2355:**
+
+A student contacted me re trouble with OMSI. I then tried it myself, and got the same error.
+
+I then checked to confirm that I was on the VPN. Turns out I wasn't!  I had connected earlier, so my ssh was still intact, but apparently my connection to the VPN had expired and thus I could not make new connections.  I renewed my VPN connection, and it all worked fine!
+
+BTW, I wasn't sure about the port number on pc11 that the server was running on, so I ssh'ed into pc11, and ran "ps -ax". I saw the server was running on port 3000.
+
+**April 8, 2305:**
+
+I've removed one item from our readings list (I may add one more later in the course), and altered the order. This is in the "proportions" section.
+
+Related note: As I mentioned in class, I recommend that you read each item AFTER I discuss it in class.
+
 **April 8, 1410:**
 
 If you added the course once the quarter started, please note [our class GitHub repo](https://github.com/ucdavis/FairMLCourse). Read the syllabus, and the linked information, especially the class procedures. Also, please note that it is required that you read the class blog every day.

@@ -1,7 +1,35 @@
 
 # Homework 1
 
-## Due Wednesday, April 17, 11:59 pm
+## Due Monday, April 24, 11:59 pm
+
+## Submitting homework (here and in future assignments)
+
+Your file names must be named **Problem1.R**, **Problem2.R** and so on.
+
+Package your files in **.tar** file.  E.g. on CSIF (Linux), Mac OS
+  etc. 
+
+```
+$ tar cf your_group_member_email_addrs.tar names_of_your_files
+```
+
+Be sure to follow the file-naming rules in our syllabus exactly.  There
+should be NO subdirectories created.  Check by unpacking,
+
+```
+$ tar xf your_group_member_email_addrs.tar
+```
+
+On CSIF, use the **handin** app. to submit your file to Yuyi:
+
+```
+$ handin lyy ecs189bHwk1 your_group_member_email_addrs.tar
+```
+
+This says, "Add my file **xxx.tar** to lyy's **ecs189bHwk1** handin
+directory." (You can check that it got there; see the **handin** man
+page.)
 
 ## Problem 1
 
@@ -164,4 +192,178 @@ Your numbers will be somewhat different, due to randomness arising from
 the random holdout set.  But it seems using gender in addition to age
 and occupation did improve prediction somewhat, but that those two
 variables do have substantial correlation with S.
+
+## Problem 2
+
+Here you will write an R mini-package (just a single function, but very
+useful).
+
+### Goal
+
+Simpson's Paradox (SP) describes a situation in which, roughly,
+
+> relation(X,Y) is + but relation(X,Y|Z) is -, or vice versa
+
+Usually, e.g. in the **UCBAdmissions** data, the variables X, Y and Z
+are all categorical.  Your code here will explore whether SP seems to
+hold for numeric X and Y (and maybe Z) for some given dataset..
+
+### Requirements
+
+The call form for your function will be
+
+``` r
+numericSimpsonfunction(data,xName,yName,zName,numZvals=NULL)
+```
+
+where
+
+* **data** is an R data frame or equivalent
+
+* **xName** is the name of the X column
+
+* **yName** is the name of the Y column
+
+* **zName** is the name of the Z column
+
+* **numZvals** is the number of intervals to break Z into in the case
+  where Z is a continuous variable
+
+X and Y should either be continuous numeric variables or dichotomous R
+factors.
+We will define "relation" as one of two types of correlation:
+
+* If both X and Y are continuous, use the classical Pearson
+  correlation, available in R as **cor()**.
+
+* If at least one of X and Y is dichotomous, use *Kendall's tau*
+  correlation, code available in the **Kendall** package.  You should be
+  able to use **install.packages()** to get this code.
+
+In both cases, correlation varies between -1 and 1, with the correlation
+being 0 if (but not only if) X and Y are independent.
+Your function will partition the rows of **data** according to the
+values of Z (after converting Z to intervals, if specified).  It will
+then compute the correlation between X and Y within each group of rows.
+
+Your pictures need not look exactly like mine, but they
+must contain the same information as mine, including:
+
+* Names of the X, Y and Z columns.
+
+* Names of the Z levels (after preprocessing).
+
+* Two horizontal bars, one of height 0 and the other of height equal to
+  the unconditional correlation between X and Y.
+
+It goes without saying, but just to make sure:  All this must be done
+programmatically, i.e. via code; you should not make the user add the
+plot title by hand, for instance.
+
+It's your choice as to what R graphics library you will use (but it must
+be R).  My own version of the code just uses base-R graphics, mainly
+**barplot()**.
+
+**NOTE CAREFULLY:**  Make absolutely sure that you agree that the above
+approach does a reasonable job of achieving the goals of this problem.
+Don't "Miss the forest (concepts of SP) for the trees (plotting
+functions etc.)."
+
+## Examples
+
+``` rc
+> source('Problem2.R')
+> library(Kendall)
+> library(qeML)
+> data(pef)
+> head(pef)
+       age     educ occ sex wageinc wkswrkd
+1 50.30082 zzzOther 102   2   75000      52
+2 41.10139 zzzOther 101   1   12300      20
+3 24.67374 zzzOther 102   2   15400      52
+4 50.19951 zzzOther 100   1       0      52
+5 51.18112 zzzOther 100   2     160       1
+6 57.70413 zzzOther 100   1       0       0
+> numericSimpson(pef,'age','wageinc','wkswrkd',4)
+> pr2file('Example1.png')  # see code below
+> numericSimpson(pef,'sex','wageinc','wkswrkd',4)
+> pr2file('Example2.png')
+> numericSimpson(pef,'age','wageinc','occ',4)
+> pr2file('Example3.png')
+
+```
+
+![alt text](Example1.png)  
+![alt text](Example2.png)  
+![alt text](Example3.png)  
+
+**NOTE CAREFULLY:**  Recall that a data outcome is subject to sampling
+error, due to variation in that value from one sample to another from
+the same (possibly conceptual) population.  One cannot take these
+pictures to be precise.  Note too, that even with a very large dataset,
+where these reported calculations would have small standard errors,
+correlations near 0 are probably not of interest in terms of SP.  I
+recommend that you at least read Extra Credit Problem B below, even if
+you do not work on it.
+
+## Coding tips
+
+I'd suggest that you browse through the code of a small package, 
+such as my 
+[toweranNA](https://cran.r-project.org/web/packages/toweranNA/index.html)
+package.  Note e.g. R functions like **is.factor()** and how default
+arguments are handled in R.
+
+## Extra Credit Problem A 
+
+(Submit in a file **ECA.R**.)
+
+Find a real dataset, in which at least one of X and Y is a continuous
+variable, in which SP hold.  Write your jode as a function call
+**spExample()** (no arguments).  It will fetch the dataset, perform any
+needed preprocessing, and then call **numericSimpson()**.
+
+## Extra Credit Problem B 
+
+(Submit in a file **ECB.R**.)
+
+It would be nice to condition on two factors, e.g. gender and
+occupation.  There Z would be an R factor with 2 X 6 = 12 levels,
+representing a categorical variable of 12 categories.
+
+Write a function with call form
+
+``` r
+superFactor(f1,f2)
+```
+
+which returns a new factor that is a combination of factors **f1** and
+**f2** as described above.
+
+## Extra Credit Problem C 
+
+(Submit in a file **ECC.R**.)
+
+Here we address the issue raised earlier about sampling variability.
+
+At the famous CS machine learning conferences (and in other fields), one
+often see *error bars* in graphs of data.  These form an approximate 95%
+confidence interval for the plotted quantity (analogous to the
+confidence rings in the graphs produced by **vcd::fourfold()**).
+
+One general way to generate confidence intervals--general in the sense
+that it applies to (almost) any estimator--is the *bootstrap*.  The
+essence of it is this:
+
+* Denote our estimator by T, say the correlation for a given Z level.
+
+* Generate m random subsets of the dataset, each of size n-k.
+
+* Calculate T on each subset.
+
+* Take our approximate 95% confidence interval to be the 2.5 and 97.5
+  percentiles of T (e.g. using R's **quantile()** function).
+
+Write a function **addErrorBars()** to a graph produced by
+**numericSimpson()**.
 
