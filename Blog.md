@@ -7,7 +7,7 @@
 
 Recall that I said I would place all our datasets here on our repo. I've now completed that.
 
-Download the [datasets](https://github.com/ucdavis/FairMLCourse/Data) NOW, before you forget. They will be used on Quizzes, including Quiz 1.
+Download the [datasets](https://github.com/ucdavis/FairMLCourse/tree/main/Data) NOW, before you forget. They will be used on Quizzes, including Quiz 1.
 
 **April 14, 0955:**
 
