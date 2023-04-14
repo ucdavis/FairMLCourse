@@ -3,6 +3,26 @@
 
 **Spring 2023**
 
+**April 14, 1530:**
+
+As you know, you can view the "man page" (onlihe help) of an R function
+by using a question mark, e.g.
+
+``` r
+?ls
+```
+
+to obtain information about the **ls()** function.  But you can also
+do this via a call to the **help()** function, e.g.
+
+``` r
+help(ls)
+```
+
+This could come in handy in an OMSI session.  Just temporarily put your
+call to **help()** in the Answers box in your OMSI screen, then click
+Submit and Run.
+
 **April 14, 1305:**
 
 A student mentioned that he had encountered an "invalid factor level, NA generated" error message. This is OK, but it's important to understand why this occurred.
