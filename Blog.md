@@ -5,7 +5,7 @@
 
 **April 14, 1530:**
 
-As you know, you can view the "man page" (onlihe help) of an R function
+As you know, you can view the "man page" (online help) of an R function
 by using a question mark, e.g.
 
 ``` r
