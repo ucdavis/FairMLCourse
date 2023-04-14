@@ -3,6 +3,31 @@
 
 **Spring 2023**
 
+**April 14, 0955:**
+
+I've been pretty critical of ChatGPT, but this time it gave a pretty
+good answer:
+
+> What are proxies in the context of fair machine learning?
+> 
+> In the context of fair machine learning, proxies refer to features or
+> variables that are used to indirectly infer a sensitive attribute, such
+> as race or gender, and may be used in the development of algorithms or
+> models.
+> 
+> For example, a model that predicts a person's likelihood of defaulting
+> on a loan might consider factors such as their credit score, employment
+> history, and income. However, if these variables are correlated with a
+> person's race, the model may end up indirectly discriminating against
+> certain groups.
+> 
+> In this case, credit score, employment history, and income are
+> considered proxies for race, as they can be used to predict a person's
+> race, even though they are not inherently related to it. To avoid such
+> indirect discrimination, it is important to carefully select features
+> and variables that do not serve as proxies for sensitive attributes, and
+> to regularly evaluate the fairness of the algorithm or model.
+
 **April 13, 1010:**
 
 On Quizzes, it will be expected that you will already have starting thinking about pending Homework assignments. For example, Hwk 1 mentions R's **cor()** function, and next week's Quiz might ask you to use it.
