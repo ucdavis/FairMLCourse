@@ -1,0 +1,155 @@
+---
+title: "tricks"
+author: "lyy"
+date: '2023-04-13'
+output: html_document
+---
+
+```{r}
+# sprintf() in R <=> compared to sprintf() in C
+name <- "John"
+age <- 30
+height <- 1.8
+
+message <- sprintf("Hello, my name is %s. I am %d years old and %.1f meters tall.", name, age, height)
+
+message
+
+```
+
+
+```{r}
+# Define a function that takes two arguments and returns their sum
+my_sum <- function(x, y) {
+  return(x + y)
+}
+
+# Build a function call as a character string
+my_call <- my_sum(2, 3)
+
+# Execute the function call using evalr()
+result <- eval(my_call)
+
+# Print the result
+result
+
+```
+
+```{r}
+# Put together: sprintf() and evalr()
+# Define a function
+my_func <- function(x, y) {
+  x + y
+}
+
+# Define arguments for the function call
+arg1 <- 2
+arg2 <- 3
+
+# Build up the function call as a string using sprintf()
+func_call <- sprintf("my_func(%d, %d)", arg1, arg2)
+
+# Execute the function call using eval()
+result <- eval(parse(text = func_call))
+
+# Print the result
+cat("The result of the function call is:", result, "\n")
+```
+
+
+```{r}
+# how I installed the packages
+library(remotes)
+install_github("matloff/qeML")
+```
+
+
+
+```{r}
+# how I load the data
+getwd()
+# professional baseball players stats
+load('/Users/yuyili/qeML/data/mlb1.RData')
+mlb1
+```
+
+
+```{r}
+version
+```
+
+
+
+
+```{r}
+library(qeML)
+# source code from https://github.com/matloff/qeML/blob/master/R/Utils.R
+# a function that takes 2 args: package name(string) and where to obtain it
+```
+
+
+```{r}
+evalr <- function(toexec) {
+   eval(parse(text=toexec),parent.frame())
+}
+```
+
+
+```{r}
+checkPkgLoaded <- function(pkgName,whereObtain='CRAN')
+{
+      # workaround to avoid conflict
+      cmd <- sprintf('%s <- NULL',pkgName)
+      evalr(cmd)
+      cmd <- sprintf('require(%s)',pkgName)
+      if (!evalr(cmd)) {
+         pkgErr <- sprintf('%s is required',pkgName)
+         print(pkgErr)
+         obtain <- paste0('if not installed, obtain from ',whereObtain)
+         stop(sprintf('if not installed, obtain from %s',whereObtain))
+      }
+      requireNamespace(pkgName)
+}
+# require('vcd')
+qeML::checkPkgLoaded('vcd',  whereObtain = "CRAN")
+```
+
+
+
+```{r}
+qeSVM(mlb1,'Weight')
+```
+
+
+```{r}
+qeGBoost(mlb1,'Weight')
+```
+
+
+```{r}
+qeSVM(mlb1,'Weight',gamma=0.8)
+```
+
+```{r}
+z <- qeGBoost(mlb1,'Weight',holdout=NULL)
+predict(z,data.frame(Position='Catcher',Height=73,Age=28))
+```
+
+```{r}
+mlb1
+mlb1 <- mlb1[,-1]
+head(mlb1)
+```
+
+
+```{r}
+mlb1 <- as.matrix(mlb1)
+dim(mlb1)
+```
+
+
+```{r}
+z <- prcomp(mlb1)
+qeML::qePCA()
+```
+
