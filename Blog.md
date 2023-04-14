@@ -3,6 +3,20 @@
 
 **Spring 2023**
 
+**April 14, 1305:**
+
+A student mentioned that he had encountered an "invalid factor level, NA generated" error message. This is OK, but it's important to understand why this occurred.
+
+Remember, the standard approach is to randomly partition one's data into training and test sets. (An alternate name for the latter, used in qeML, is "holdout set.") Now, suppose one of our predictors, say X<sub>3</sub>, is categorical, implemented as an R factor. Say X<sub>3</sub> has 12 levels, i.e. there are 12 categories. As I mentioned yesterday, R packages typically convert this to indicator/dummy variables. Here we would have 11 such variables. (We don't need a 12th; if all 11 are 0, that implies category 12.)
+
+Now consider what could happen if, say, level 5 occurs rarely. Then it may happen that this level occurs in the training set but not in the test set.  Then the R function would be surprised, unable to deal with that level, hence the error message.
+
+How should this be handled? There are several possibilities:
+
+* Just ignore it, and use the **testAcc** value computed from the other holdout cases.
+* Run the analysis again. You'll get training and test sets different from before, and maybe the problem won't occur this time.
+* Use the function **qeML::factorToTopLevels()** to simplify X<sub>3</sub> to just its more frequent levels, lumping everthing else to "other." Since this reduces the number of features--remember, each indicator variable is a feature--this might also be useful to avoid overfitting.
+
 **April 14, 1115:**
 
 Recall that I said I would place all our datasets here on our repo. I've now completed that.
