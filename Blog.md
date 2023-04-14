@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 14, 1115:**
+
+Recall that I said I would place all our datasets here on our repo. I've now completed that.
+
+Download the [https://github.com/ucdavis/FairMLCourse/Data](datasets) NOW, before you forget. They will be used on Quizzes, including Quiz 1.
+
 **April 14, 0955:**
 
 I've been pretty critical of ChatGPT, but this time it gave a pretty
