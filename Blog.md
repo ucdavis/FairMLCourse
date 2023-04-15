@@ -13,6 +13,10 @@ For today's trivia item, I'll mention that the original inventor of Cold Fusion 
 A few years ago, JJ decided that the R language needed an IDE, so he developed RStudio, and founded the firm of that name. He's 
 an amazing guy (and very nice personally). He still loves coding, and spends a lot of his day in that activity, even though he is the CEO.
 
+In the context of our ECS 189G course, JJ has always been interested in social issues, and recently changed the legal status of 
+RStudio to that of a Public Benefit Corporation. I'm not sure of the implications of that, but it reflects the fact that
+JJ has always wanted to "Do good, not must do well."
+
 
 **April 15, 0950:**
 
