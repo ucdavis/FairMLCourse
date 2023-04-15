@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 15, 1630:**
+
+An issue that usually arises in data analysis is what to do with missing values. These are coded NA in R. For the **cor()** function, set **use = 'complete.obs'**. This will skip any case in which one of the two arguments is NA.
+
 **April 15, 1555:**
 
 I see now that I hadn't finished creating **englishBrief.RData**. I just pushed the complete version.
