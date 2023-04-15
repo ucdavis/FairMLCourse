@@ -3,6 +3,11 @@
 
 **Spring 2023**
 
+**April 15, 1540:**
+
+I just pushed a new dataset, **englishBrief.RData** in the **other** section of our dataset collection. There is also an
+accompanying **README**. I think it's likely that we will use this data in Quiz 1.
+
 **April 15, 1500:**
 
 Remember, on Quizzes your OMSI window must fill your laptop screen at all times. If you think you will need a copy of this blog, or your Homework submission etc., you may bring paper hard copies to the Quiz (and for that matter, paper copies of anything else).
