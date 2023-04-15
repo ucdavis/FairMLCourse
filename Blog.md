@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 15, 1035:**
+
+In Quiz problems designated as "R code answer," you are NOT required to write code that is short, efficient or elegant. Just make it work. And remember, OMSI allows you to test your code, a vitally important feature.
+
 **April 15, 0955:**
 
 For some reason the Registrar's student roster site is down this morning. I noticed in the error messages I got from running 
