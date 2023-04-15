@@ -3,6 +3,17 @@
 
 **Spring 2023**
 
+**April 15, 0955:**
+
+For some reason the Registrar's student roster site is down this morning. I noticed in the error messages I got from running 
+Lynx that the site uses Adobe Cold Fusion, an early Web development tool that has gone through various new versions.
+
+For today's trivia item, I'll mention that the original inventor of Cold Fusion was JJ Allaire. JJ wrote it as an undergrad and sold it to Microsoft for millions. He then became a "serial entrepreneur," founding a series of successful startups.
+
+A few years ago, JJ decided that the R language needed an IDE, so he developed RStudio, and founded the firm of that name. He's 
+an amazing guy (and very nice personally). He still loves coding, and spends a lot of his day in that activity, even though he is the CEO.
+
+
 **April 15, 0950:**
 
 My blog post of April 13, 1010 emphasized the need to get a good start on whatever Homework is pending to prepare for a Quiz.
