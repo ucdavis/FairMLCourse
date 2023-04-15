@@ -3,6 +3,11 @@
 
 **Spring 2023**
 
+**April 15, 0950:**
+
+My blog post of April 13, 1010 emphasized the need to get a good start on whatever Homework is pending to prepare for a Quiz.
+This is worth repeating; the more progress you've made on Hwk 1 before you take Quiz 1, the better you are likely to do on that Quiz.
+
 **April 14, 1530:**
 
 As you know, you can view the "man page" (online help) of an R function
