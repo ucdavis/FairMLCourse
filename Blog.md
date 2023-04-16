@@ -3,6 +3,35 @@
 
 **Spring 2023**
 
+**April 15, 1935:**
+
+A very handy R function is **order()**, which acts as a companion to **sort()**.
+Get to know it well, because it will likely be useful in Quizzes, Homework and the Term Project.
+
+Example:
+
+``` rc
+>x <- runif(5)
+> x
+[1] 0.4416110 0.9812922 0.6882194 0.9579802 0.2905208
+> sort(x)
+[1] 0.2905208 0.4416110 0.6882194 0.9579802 0.9812922
+> order(x)
+[1] 5 1 3 4 2
+```
+
+So, the 5 means that **x[5]** is smaallest in **x**, the 1 means that **x[1]** is second-smallest etc.
+
+And note this:
+
+``` rc
+> x[order(x)]
+[1] 0.2905208 0.4416110 0.6882194 0.9579802 0.9812922
+``
+
+It's the same as **sort(x)**! Make sure you see why.
+
+
 **April 15, 1630:**
 
 An issue that usually arises in data analysis is what to do with missing values. These are coded NA in R. For the **cor()** function, set **use = 'complete.obs'**. This will skip any case in which one of the two arguments is NA.
