@@ -20,7 +20,7 @@ Example:
 [1] 5 1 3 4 2
 ```
 
-So, the 5 means that **x[5]** is smaallest in **x**, the 1 means that **x[1]** is second-smallest etc.
+So, the 5 means that **x[5]** is smallest in **x**, the 1 means that **x[1]** is second-smallest etc.
 
 And note this:
 
