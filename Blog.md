@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 16, 1310:**
+
+We will be using **data/other/englishBrief.Rdata** in Quiz 1. Please place a copy of it in the same directory from which you run OMSI.
+
 **April 15, 1935:**
 
 A very handy R function is **order()**, which acts as a companion to **sort()**.
