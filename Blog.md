@@ -11,7 +11,7 @@ Get to know it well, because it will likely be useful in Quizzes, Homework and t
 Example:
 
 ``` rc
->x <- runif(5)
+> x <- runif(5)
 > x
 [1] 0.4416110 0.9812922 0.6882194 0.9579802 0.2905208
 > sort(x)
@@ -27,7 +27,7 @@ And note this:
 ``` rc
 > x[order(x)]
 [1] 0.2905208 0.4416110 0.6882194 0.9579802 0.9812922
-``
+```
 
 It's the same as **sort(x)**! Make sure you see why.
 
