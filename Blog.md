@@ -5,7 +5,7 @@
 
 **April 16, 1310:**
 
-We will be using **data/other/englishBrief.Rdata** in Quiz 1. Please place a copy of it in the same directory from which you run OMSI.
+We will be using **data/other/englishBrief.Rdata** in Quiz 1. Please place a copy of it in the same directory from which you run OMSI. I strongly recommend that you device a little R code snippet to test that you can indeed access the dataset from within OMSI.
 
 **April 15, 1935:**
 
