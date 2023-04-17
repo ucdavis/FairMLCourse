@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 17, 1345:**
+
+Keep in mind that many if not most Quiz questions will refer to something in our reading. It is thus imperative to have copies of the reading materials, either on paper or in a PDF file.
+
 **April 16, 1310:**
 
 We will be using **data/other/englishBrief.Rdata** in Quiz 1. Please place a copy of it in the same directory from which you run OMSI. I strongly recommend that you device a little R code snippet to test that you can indeed access the dataset from within OMSI.
