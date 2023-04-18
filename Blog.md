@@ -3,6 +3,24 @@
 
 **Spring 2023**
 
+**April 18, 1555:**
+
+Please make SURE nothing goes wrong when you take Thursday's Quiz.
+Some students had OMSI problems in my ECS 132 Quiz, which was surprising
+in that making Quiz 0 take-home was supposed to prevent that.
+
+* Make sure to do a full test of OMSI, where you play the roles of both
+  the instructor (you run the server) and the student (you run the
+client). Run the server on CSIF and the client in a campus classroom,
+for the most realistic test.
+
+* Make sure you have combined the readings into a single PDF file, and
+  make sure you can read the file from within OMSI, without invoking a
+browser. (Acrobat is fine.)  As you know, this is an anti-cheating
+measure in OMSI, e.g. to prevent a student from e-mailing someone during
+a Quiz etc.  **Make sure to actually try reading your PDF from within
+OMSI.**
+
 **April 17, 1825:**
 
 The lecture and readings coverage for any Quiz is all material covered through the most recent lecture. For us that means all material through the most recent Tuesday prior to the Quiz.
