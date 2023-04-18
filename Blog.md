@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 17, 1825:**
+
+The lecture and readings coverage for any Quiz is all material covered through the most recent lecture. For us that means all material through the most recent Tuesday prior to the Quiz.
+
 **April 17, 1345:**
 
 Keep in mind that many if not most Quiz questions will refer to something in our reading. It is thus imperative to have copies of the reading materials, either on paper or in a PDF file.
