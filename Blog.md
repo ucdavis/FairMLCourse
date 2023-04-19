@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**April 18, 1840:**
+
+Please make SURE you understand OS path issues.  On one of the
+questions in Quiz 2, you will write code that reads from one of the
+files in our dataset collection.  
+
 **April 18, 1555:**
 
 Please make SURE nothing goes wrong when you take Thursday's Quiz.
