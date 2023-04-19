@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 19, 1645:**
+
+As I have said, all the Quizzes are open-book, open notes. You can bring in anything on paper you wish, say your Homework solutions, or incorporate them into your big PDF file containing all our readings.
+
 **April 18, 1840:**
 
 Please make SURE you understand OS path issues.  On one of the
