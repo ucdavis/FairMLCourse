@@ -3,6 +3,24 @@
 
 **Spring 2023**
 
+**April 19, 2255:**
+
+Notes on debugging, both in general and in R:
+
+* Don't use print statements to debug!  Use a debugging tool.
+
+* Any good IDE will have a built-in debugging tool, e.g. VS Code
+  (Python, R, whatever) or RStudio (R).  The developers of those IDEs
+put them there for a REASON!
+
+* Or use the underlying debugging tool directly, e.g. **gdb**
+(C/C++), **pdb** (Python) or **debug()** (R).
+
+* Use my Principle of Confirmation: Step through your code in the
+  debugging tool.  Check variables etc. as you go along, **confirming**
+that "what you think is true, IS true."  Eventually, one will not
+confirm, and you will then have at least found the location of the bug.
+
 **April 19, 1645:**
 
 As I have said, all the Quizzes are open-book, open notes. You can bring in anything on paper you wish, say your Homework solutions, or incorporate them into your big PDF file containing all our readings.
