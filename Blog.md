@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 20, 0000:**
+
+In the example in Problem 2, I used R's **cut()** function to create the intervals.
+
 **April 19, 2255:**
 
 Notes on debugging, both in general and in R:
