@@ -3,6 +3,69 @@
 
 **Spring 2023**
 
+**April 22, 1540:**
+
+I just finished grading Quiz 1, and have e-mailed you your grade.  Overall
+the results were disappointing, and often in surprising ways.
+
+The top score was 75/100.  I decided to set 70 as an A. (This is
+different for every quiz; I set letter grade cutoffs according to what I
+consider the level of difficulty of the Quiz problems.)
+
+That meant I gave only 2 A grades.  And I also gave only 2 B grades.
+This is out of the 26 who took the Quiz.  By contrast, in my ECS 132
+class last week, I gave nearly 50% A grades (including A- and A+).
+
+I would offer the following possible reasons for what happened:
+
+* Some students are not reading the Blog.  Question 1 was a giveaway for
+  those who did read it.  And even the A students did not heed my post
+of April 15, 1630.  Of course, students who don't read the Blog won't
+see this Blog post here either. :-)
+
+* Some students have not seen R before this class.  OK, but even those
+  students should have been able to do Problem 4, which was **very
+similar to the Homework.**
+
+* Some students, even CS majors, are simply poor programmers. This is
+  not news; some of my faculty colleagues have said this based on what 
+they have seeing recently in upper-division courses.  IMO this is in part due 
+to serious problems in the way our lower-division programming courses are taught.
+
+* Some students are simply not putting much time into the course.
+
+Now, what is to be done? It's likely that things would improve somewhat in
+fuure Quizzes, but as my use of the word *would* instead of *will*
+earlier in this sentence implies, I think pretty drastic change is
+called for here.
+
+I propose the following:
+
+* We will cease having Quizzes.
+
+* Instead, I will take over the Interactive Homework Grading, which Yuyi
+  would have done.  (Recall:  She will first run a script to check the
+accuracy of your code, then give you a second grade based on how you do
+in Interactive Grading.  Your overall grade for that assignment will
+then be a combination of the two grades.)  The Homework weight in your
+course grade will be expanded accordingly.
+
+What do you think of this proposal?  Mind you, **don't jump to the
+conclusion that this way will be easier.**  I will ask penetrating
+questions, just like Yuyi would have, but more so.  What does this line
+of code do?  What would you have done if the Homework prompt had been
+different?  Why would using approach XXX have been incorrect?  In what
+senses?  What is the interpretation of quantity YYY?  Note that I will
+ask followup questions, and also **general questions about the course
+material**.  Again, Yui would have done all this , but obviously my
+questions will be more nuanced.
+
+Still not easy, but I think many of you would at least feel like you
+would be better able to prepare.  
+
+We will discuss all this in class on Tuesday, but in the meantime, if
+you have comments or questions, please e-mail me.
+
 **April 20, 0000:**
 
 In the example in Problem 2, I used R's **cut()** function to create the intervals.
