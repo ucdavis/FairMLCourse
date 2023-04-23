@@ -1,0 +1,88 @@
+
+(standard preamble here)
+
+1.  (Text answer.) An "invalid factor level, NA generated" error message
+in a qeML function call is an indication of possible (answer one or more
+of these):
+
+(i) None of the below.
+
+(ii) Hardware incompatibility.
+
+(iii) Item in the data being incorrectly coded.
+
+(iv) Accidental swapping of two rows in the data.
+
+(v) Some level of some factor being rare.
+
+(vi) Overfitting.
+
+2.  (Text answer.)  In predicting criminal recidivism, say we wish to
+exclude race as a feature/predictor.  We are also concerned the level of
+education may be a proxy for race.  Explain the term "proxy," using this
+setting to illustrate your explanation.
+
+3.  (R code answer.)  Write your own small version of qeKNN(), the
+k-Nearest Neighbor function in qeML.  The call form will be
+
+miniKNN(x,y,xNew,k)
+
+It is assumed here that we have just one feature/predictor, so the
+vectors x and y are the feature and outcome portions of the training
+set.  The return value of the function is our prediction of yNew, the Y
+value for a new case whose X value is xNew.
+
+miniKNN <- function(x,y,xNew,k)
+{
+
+}
+
+mtc <- mtcars[,c(1,4)]  # R built-in dataset
+head(mtc)
+#                    mpg  hp
+# Mazda RX4         21.0 110
+# Mazda RX4 Wag     21.0 110
+# Datsun 710        22.8  93
+# Hornet 4 Drive    21.4 110
+# Hornet Sportabout 18.7 175
+# Valiant           18.1 105
+miniKNN(mtc[,2],mtc[,1],108,5)  # predict mpg from hp
+# 20.58
+
+4.  (R code answer.)  Write a function that finds the Pearson correlation
+of each individual feature with a sensitive variable S and an outcome
+variable Y.  The call form will be 
+
+corsXSY(data,sName,yName)
+
+It will return a data frame having r-2 rows and 3 columns,
+where r is is ncol(data).  The column names will be 
+'xName', 'XScor' and 'XYcor', 
+
+Fill in the blanks (you may change the body of the function, but 
+you must never change the call form or return value in any Quiz
+question).
+
+corXSY <- edit(corXSY) 
+function(data,sName,yName)
+{
+   xNames <- setdiff(names(data),c(sName,yName))
+   n <- length(xNames)
+   ...
+   XScor <- vector(length=n)
+   XYcor <- vector(length=n)
+
+   for (i in 1:n) {
+      ...
+   }
+
+   data.frame(xNames=xNames,XScor=XScor,XYcor=XYcor)
+
+}
+
+load('englishBrief.Rdata')  
+corXSY(englishBrief,'URM','vocab')
+# one of the output rows will be
+# age  0.05502021 0.754848632
+
+

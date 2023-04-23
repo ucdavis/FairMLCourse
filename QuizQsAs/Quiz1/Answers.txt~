@@ -1,0 +1,47 @@
+
+1. (iii), (v), (vi)
+
+2. A proxy is a variable that is correlated to some degree with the
+sensitive variable.  If the correlation is strong enough, our omitting
+the sensitive variable from our analysis won't help much, as the proxy
+is representing it anyway.
+
+3.
+
+corXSY <- function(data,sName,yName)
+{
+   xNames <- setdiff(names(data),c(sName,yName))
+   n <- length(xNames)
+   s <- data[[sName]]
+   y <- data[[yName]]
+   n <- length(xNames)
+   XScor <- vector(length=n)
+   XYcor <- vector(length=n)
+
+   for (i in 1:n) {
+      XScor[i] <- cor(data[[xNames[i]]],s,use='complete.obs')
+      XYcor[i] <- cor(data[[xNames[i]]],y,use='complete.obs')
+   }
+
+   data.frame(xNames=xNames,XScor=XScor,XYcor=XYcor)
+
+}
+
+load('englishBrief.Rdata')  
+corXSY(englishBrief,'URM','vocab')
+
+4.
+
+miniKNN <- function(x,y,xNew,k)
+{
+
+    dists <- abs(x - xNew)  # vector op
+    idxs <- order(dists)
+    closest <- idxs[1:k]
+    mean(y[closest])
+}
+
+mtc <- mtcars[,c(1,4)]  # R built-in dataset
+miniKNN(mtc[,2],mtc[,1],108,5)
+
+
