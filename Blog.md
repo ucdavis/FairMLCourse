@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**April 22, 1935:**
+
+The solutions to Quiz 1 are in our class repo, in the directory **QuizQsAs**.
+
+BTW, several students had a line in their solution for Question 4,
+
+> corXSY <- edit(corXSY)
+
+This one baffles me. Anyone who did this, please e-mail me to explain.
+
 **April 22, 1540:**
 
 I just finished grading Quiz 1, and have e-mailed you your grade.  Overall
