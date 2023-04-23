@@ -3,6 +3,15 @@
 
 **Spring 2023**
 
+**April 22, 2035:**
+
+To make sure all is clear, here is my proposal:
+* No Quizzes. Quiz 0 and Quiz 1 would not count either.
+* Yuyi would still run your Homework code to check its accuracy.
+* In Interactive Grading, I would be the one to ask you questions, instead of Yuyi.
+* Weight of the Homework in your final course grade would be increased to replace the Quizzes.
+* You would still have a Term Project, group-based.
+
 **April 22, 1935:**
 
 The solutions to Quiz 1 are in our class repo, in the directory **QuizQsAs**.
@@ -54,11 +63,10 @@ I propose the following:
 * We will cease having Quizzes.
 
 * Instead, I will take over the Interactive Homework Grading, which Yuyi
-  would have done.  (Recall:  She will first run a script to check the
+  would have done.  Recall:  The original plan was that Yuyi would first run a script to check the
 accuracy of your code, then give you a second grade based on how you do
-in Interactive Grading.  Your overall grade for that assignment will
-then be a combination of the two grades.)  The Homework weight in your
-course grade will be expanded accordingly.
+in Interactive Grading.  Your overall grade for that assignment wpi;f
+then be a combination of the two grades. But now I would be asking the questions in Interactive Grading instead of Yuyi.)  The Homework weight in your course grade would be expanded accordingly.
 
 What do you think of this proposal?  Mind you, **don't jump to the
 conclusion that this way will be easier.**  I will ask penetrating
@@ -67,7 +75,7 @@ of code do?  What would you have done if the Homework prompt had been
 different?  Why would using approach XXX have been incorrect?  In what
 senses?  What is the interpretation of quantity YYY?  Note that I will
 ask followup questions, and also **general questions about the course
-material**.  Again, Yui would have done all this , but obviously my
+material**.  Again, Yuyi would have done all this , but obviously my
 questions will be more nuanced.
 
 Still not easy, but I think many of you would at least feel like you
