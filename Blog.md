@@ -7,7 +7,7 @@
 
 A sharp student asked me about the form of the return value of the "superfactor" Extra Credit problem. Even if you do not work on this EC problem, you may find my answer to be of interest:
 
-< If there are l1 levels in f1 and l2 levels in f2, then technically any 
+> If there are l1 levels in f1 and l2 levels in f2, then technically any 
 > output factor with l1 * l2 levels is OK, but of course it would be nice to     
 > relate the levels to the original ones in f1 and f2.
 
