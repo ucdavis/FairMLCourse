@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 24, 1645:**
+
+I don't think my specs were completely clear on the name of your **.tar** file. E.g. if a group's members have e-mail addresses ajones@ucdavis.edu and bli@ucdavis.edu, your submitted file should be **ajones.bli.tar**, no 'ucdavis.edu'.
+
 **April 24, 1235:**
 
 If any of your teammates are unresponsive to your messages, or otherwise
