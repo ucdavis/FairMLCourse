@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**April 24, 1235:**
+
+If any of your teammates are unresponsive to your messages, or otherwise
+not engaged in your work on the Homework, then **DO NOT INCLUDE THEIR
+NAMES IN YOUR SUBMISSION.**
+
+If this effectively leaves you with a Group size of 2, and you wish to
+be part of a larger Group, let Yuyi know, and we will work something
+out.
+
 **April 23, 2105:**
 
 A sharp student asked me about the form of the return value of the
