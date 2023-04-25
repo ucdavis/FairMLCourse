@@ -3,6 +3,34 @@
 
 **Spring 2023**
 
+**April 25, 0925:**
+
+Please submit your Homework according to specs, in a **.tar** package
+(in CS, people tend to use that, not **.zip**).
+
+If you have trouble, then of course go ahead with **.zip**.  But keep in
+mind that you will be making extra work for Yuyi, who will have to unzip
+your submission and then create a **.tar** file for you.  (The grading
+script assumes **.tar**.)
+
+Here is a demonstration of the Unix-family (Mac, Linux) **tar** command:
+
+```
+matloff@COE-CS-pc22:~$ tar cf test.tar onAttach.R qeCmp.R 
+matloff@COE-CS-pc22:~$ tar tf test.tar
+onAttach.R
+qeCmp.R
+matloff@COE-CS-pc22:~$ cd tmp
+matloff@COE-CS-pc22:~/tmp$ ls
+matloff@COE-CS-pc22:~/tmp$ tar xf ../test.tar
+matloff@COE-CS-pc22:~/tmp$ ls
+onAttach.R  qeCmp.R
+```
+
+The 'cf' stands for "create file," and 'xf' means "extract files."
+Somehow 'tf' is for "list files."
+
+
 **April 24, 2000:**
 
 Tomorrow we will discuss whether to continue to follow the original
