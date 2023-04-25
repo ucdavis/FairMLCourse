@@ -11,7 +11,7 @@ of expanded weight on the Homework.  During this discussion, I hope that
 everyone who has comments will speak up.  I hope you know me well enough
 to have the impression that I am very open.
 
-If the students' views are mostly on one a given choice, say not having
+If the students' views are mostly on one particular choice, say not having
 Quizzes, we will so decide.  If the feeling is pretty much split, then I
 will need to make the decision myself.
 
