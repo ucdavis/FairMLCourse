@@ -25,8 +25,8 @@ use in our class.
 BTW, I anticipate having a total of 3 or 4 Homework assignments,
 including the one due today.  Note too the Term Project, which we will
 have as planned, independent of what we do regarding Quizzes.  The
-Homework assignments will be the same, again regardless of what we do on
-the Quizzes.
+Homework assignments will be the same, again regardless of what we
+decide on the Quizzes.
 
 Here is a preview of Homework 2 (tentative):
 
