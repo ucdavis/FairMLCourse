@@ -17,7 +17,7 @@ will need to make the decision myself.
 
 Regardless of our decision, we will not have a Quiz this week.  Instead,
 Yuyi will lecture on the material in
-[the linear algebra tutorial]((https://github.com/matloff/fastLinearAlgebra).
+[the linear algebra tutorial](https://github.com/matloff/fastLinearAlgebra).
 For most or all of you, this will be a review, but it will start from
 scratch.  Linear algebra will arise in some of the Fair ML methods we
 use in our class.
