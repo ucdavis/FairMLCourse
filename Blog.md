@@ -30,6 +30,10 @@ onAttach.R  qeCmp.R
 The 'cf' stands for "create file," and 'xf' means "extract files."
 Somehow 'tf' is for "list files."
 
+The files **onAttach.R** and **qeCmp.R** were in my current directory. I packed them into a new file (could have been existing) **test.tar**. I then checked it via 'tf'. To really test, I then went to a new directory and ran 'xf'; sure enough, the files did indeed then get created in that directory, copies of the original.
+
+Like any Unix command, you can obtain online help for **tar** by typing 'man tar'.
+
 
 **April 24, 2000:**
 
