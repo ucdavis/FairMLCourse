@@ -3,9 +3,50 @@
 
 **Spring 2023**
 
-**April 24, 1645:**
+**April 24, 2000:**
 
-I don't think my specs were completely clear on the name of your **.tar** file. E.g. if a group's members have e-mail addresses ajones@ucdavis.edu and bli@ucdavis.edu, your submitted file should be **ajones.bli.tar**, no 'ucdavis.edu'.
+Tomorrow we will discuss whether to continue to follow the original
+course plan, i.e. continue to have Quizzes, or drop the Quizzes in favor
+of expanded weight on the Homework.  During this discussion, I hope that
+everyone who has comments will speak up.  I hope you know me well enough
+to have the impression that I am very open.
+
+If the students' views are mostly on one a given choice, say not having
+Quizzes, we will so decide.  If the feeling is pretty much split, then I
+will need to make the decision myself.
+
+Regardless of our decision, we will not have a Quiz this week.  Instead,
+Yuyi will lecture on the material in
+[the linear algebra tutorial]((https://github.com/matloff/fastLinearAlgebra).
+For most or all of you, this will be a review, but it will start from
+scratch.  Linear algebra will arise in some of the Fair ML methods we
+use in our class.
+
+BTW, I anticipate having a total of 3 or 4 Homework assignments,
+including the one due today.  Note too the Term Project, which we will
+have as planned, independent of what we do regarding Quizzes.  The
+Homework assignments will be the same, again regardless of what we do on
+the Quizzes.
+
+Here is a preview of Homework 2 (tentative):
+
+* Problem 1 will address that question of whether racial issues should
+affect the use of standardized tests in admission to universities and
+professional schools.  Some say no, citing correlation between test
+scores and family wealth, the latter being a proxy for race.  But what
+if one were to condition on the wealth or race variable?  In other
+words, what if the test-related admissions criterion were how high the
+applicant scored, *given his/her family income*?  We will analyze this
+from a prediction point of view, using variouse qeML functions.
+
+* Problem 2 will concern the issue of *edge bias* discussed in class.
+You will dig through one of the random forests functions in qeML, to
+determine how to access the leaves of a tree in the output.  (A
+"software scavenger hunt.")  You will then modify the qeML function to
+fit a linear model at each node, and add the coefficients to the
+function's output.  Finally, you will modify the predict() function
+paired with that function so that the user has a choice of the original
+type of prediction or the edge-modified one.
 
 **April 24, 1235:**
 
