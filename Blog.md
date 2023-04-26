@@ -3,6 +3,18 @@
 
 **Spring 2023**
 
+**April 25, 2245:**
+
+(Just for fun.)
+
+A student mentioned in class today that he finds it difficult to code without an IDE, i.e. just using a text editorsuch as Vim. So I asked ChatGPT, "What are the advantages of using an IDE for coding?" It gave a numbered list, the first of which was,
+
+"Increased productivity: IDEs provide a range of tools and features that make coding faster and easier. For example, code completion and syntax highlighting can speed up coding and reduce errors." That's ALL? Code completion and syntax highlighting? Vim gives me that, AND allows me to write my own macros; e.g. I type 'fnn' and it expands to the skeleton of a function; 'frl' gies me a *for* loop etc.
+
+Reason 3 was very interesting, in light of my comments today: "IDEs often have built-in debugging tools." Yes! But do people use them? Most students don't, thus dooming themselves to longer debugging sessions.
+
+**April 25, 1800(?):**
+
 It was decided in class today to choose the "no quizzes" option.
 
 **April 25, 0925:**
