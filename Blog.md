@@ -13,6 +13,8 @@ A student mentioned in class today that he finds it difficult to code without an
 
 Reason 3 was very interesting, in light of my comments today: "IDEs often have built-in debugging tools." Yes! But do people use them? Most students don't, thus dooming themselves to longer debugging sessions.
 
+Over the years, I've tried many IDEs, both general-purpose and language-specific, and always find that they just get in my way.
+
 **April 25, 1800(?):**
 
 It was decided in class today to choose the "no quizzes" option.
