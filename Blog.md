@@ -3,6 +3,8 @@
 
 **Spring 2023**
 
+It was decided in class today to choose the "no quizzes" option.
+
 **April 25, 0925:**
 
 Please submit your Homework according to specs, in a **.tar** package
