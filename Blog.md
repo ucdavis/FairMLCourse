@@ -3,6 +3,39 @@
 
 **Spring 2023**
 
+**April 27, 1605:"
+
+Some remarks on IDEs:
+
+An IDE should make one more productive, not less.
+
+In general, I am not a fan of IDEs.  I've tried many, many of them, in
+languages C/C++, Python and R, and have always found that I am much more
+productive by just using the Vim text editor--WITH my [homegrown Vim macros](https://heather.cs.ucdavis.edu/Vimrcs/).
+
+In R, for instance, if I want to write a 'for' loop, I just type 'frl', and Vim automatically expands it to
+
+```,r
+for (i in 1:n) {
+}
+```
+To create a matrix, I type 'nmm', and Vim give me
+
+```,r
+matrix(nrow=,ncol=)
+```
+
+Small things, yes, but it saves me time, allowing me to focus better
+on the coding itself, and avoids future arthritis in my fingers. :-)
+
+Of course, Vim automaticall supplies me with syntax highlighting, code completion etc., which the IDEs do. But the IDEs don't give me the ability to write macros.
+
+Most of my macros are 1- or 2-liners, very easy to devise, but Vim actually allows you to write more elaborate macros in Python. Note, I didn't mean one's usage of Vim to edit Python; instead I'm talking about using Python to extend Vim, for usage in editing files in any language. Indeed,(Vim plugins)[https://vimawesome.com/] tend to be written in Python.
+
+So the big advantage of Vim is that it allows me to customize my work environment, whether it be for my work in R, Python or LaTeX.
+
+Obviously this is a matter of keen personal preference. Most professional deelopers do use an IDE, but many use Vim. The latter is not just something thrown into a beginning programming class as a "historical example."
+
 **April 27, 1555:**
 
 Please note that when a homework problem states something like "Use function X, Package Y etc.", then it is a requirement unless it explicitly says it is just a suggestion.
