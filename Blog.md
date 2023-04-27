@@ -3,7 +3,7 @@
 
 **Spring 2023**
 
-**April 27, 1605:"
+**April 27, 1605:**
 
 Some remarks on IDEs:
 
