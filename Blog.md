@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**April 27, 1555:**
+
+Please note that when a homework problem states something like "Use function X, Package Y etc.", then it is a requirement unless it explicitly says it is just a suggestion.
+
 **April 25, 2245:**
 
 (Just for fun.)
