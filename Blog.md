@@ -25,12 +25,11 @@ To create a matrix, I type 'nmm', and Vim give me
 matrix(nrow=,ncol=)
 ```
 
-Small things, yes, but it saves me time, allowing me to focus better
-on the coding itself, and avoids future arthritis in my fingers. :-)
+Small things, yes, but it saves me time, allowing me to focus better on the coding itself, and avoids future arthritis in my fingers. :-)
 
-Of course, Vim automaticall supplies me with syntax highlighting, code completion etc., which the IDEs do. But the IDEs don't give me the ability to write macros.
+Of course, Vim automatically supplies me (in base form, i.e. not needing my own macros) with syntax highlighting, code completion etc., which the IDEs do. But the IDEs don't give me the ability to write macros.
 
-Most of my macros are 1- or 2-liners, very easy to devise, but Vim actually allows you to write more elaborate macros in Python. Note, I didn't mean one's usage of Vim to edit Python; instead I'm talking about using Python to extend Vim, for usage in editing files in any language. Indeed,(Vim plugins)[https://vimawesome.com/] tend to be written in Python.
+Most of my macros are 1- or 2-liners, very easy to devise, but Vim actually allows you to write more elaborate macros in Python. Note, I didn't mean one's usage of Vim to edit Python; instead I'm talking about using Python to extend Vim, for usage in editing files in any language. Indeed,[Vim plugins](https://vimawesome.com/) tend to be written in Python.
 
 So the big advantage of Vim is that it allows me to customize my work environment, whether it be for my work in R, Python or LaTeX.
 
