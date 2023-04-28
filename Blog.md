@@ -7,7 +7,7 @@
 
 Directions for interactive grading. 
 
-* You will come in to the grading session, as a group. 
+* You will come in to the grading session as a group. 
 
 * Each person will be asked two to four questions. 
 
@@ -27,15 +27,15 @@ and such?"
   classroom.  While you are waiting your turn, please sit quietly at the
 back of the room, so as not to distract the group being graded.
 
-* All other sessions will be done in my office, 3053 Kemper. Please wait
+* All other sessions will be done in my office, 3053 Kemper. Please stay
   in the hallway while you're waiting for your group to be graded. 
 
 * You are welcome to bring in any materials you want, including your
 homework, our readings and so on.
 
-* Regrades:  If you feel that your grade was "inaccurate," you are
+* Regrades:  If you feel that your grade was inaccurate, you are
   welcome to request a regrade.  Note that the regrade will not consist
-of re-evaluating the quality of you submitted work and performance in
+of re-evaluating the quality of your submitted work and performance in
 interactive grading.  Instead, it will consist of my asking you further
 questions of the type described above; questions about the course
 material will predominate here.
