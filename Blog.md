@@ -12,18 +12,19 @@
 
 is a better drawing than what I drew on the board today. Here is how I explained it.
 * Say we are estimating the population mean of a p-component vector. If the vector is just height, then p = 1; for height and weight, p = 2; for height, weight and age, p = 3, etc.
-* *James-Stein theory* says that p = 1 or 2,the straightforward approach, i.e. using as our estimate the vector of the p sample means is optimal (min mean squared error in estimating the population mean vector). But if p is 3 or more,the optimal strategy is to multiply that sample mean vector by a number in (0,1), say 0.9. The theory givss a formula for the actual multiplicative constant, but the details are not important for us.
+* *James-Stein theory* says that for p = 1 or 2,the straightforward approach, i.e. using as our estimate the vector of the p sample means, is optimal (min mean squared error in estimating the population mean vector). But if p is 3 or more,the optimal strategy is to multiply that sample mean vector by a number in (0,1), say 0.9. The theory gives a formula for the actual multiplicative constant, but the details are not important for us.
 * So, some people thought, "If it's good to shrink our estimate of an unconditional mean, then maybe we should do the same for estimating regression functions, which are conditional means."
-* In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. (Again, there is a question of by how much we should shrink, but put that aside for a moment.) Let p denote the number of component of &beta;.
-* By centering Y and all the X features, i.e. subtracting their mean, they all have mean 0, which one can show implies that we can assume b<sub>0</sub> = 0. And here we view the case p = 2.
+* In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. 
+* By centering Y and all the X features, i.e. subtracting their means, they all have mean 0, which one can show implies that we can assume b<sub>0</sub> = 0. And here we view the case p = 2.
 * So the OLS estimate minimizes SS = &Sigma;<sub>i</sub> [Y<sub>i</sub> - (b<sub>1 X<sub>1i</sub></sub> + b<sub>2</sub> X<sub>2i</sub>)]<sup>2</sup>. It's important to note that our b<sub>LASSO</sub> will NOT achieve such a small value of SS; b<sub>OLSa</sub> is the unique minimizer.
 * The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first. Denote the b that we finally obtain via LASSO by b<sub>LASSO</sub>.
-* It can be shown mathematically that direct shrinking is basically equivalent to limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
-* Note that d is a hyperparameter. for a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
-* Now, the picture on the left side, at the above link, shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; rather than b.)  
+* We will achieve shrinking by limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
+* Note that d is a hyperparameter. For a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
+* Now, the picture on the left side shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; but it should be b.)  
 * So we requre that b<sub>LASSO</sub> be somewhere witin the diamond, including on the edges.
 * Now, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS. So the smaller ellipses are preferable.
-* Well, where does that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
+* As noted, b<sub>OLS</sub> is the unique minimizer of SS, so its "ellipse" has degenerated to a single point.
+* Well, where does all that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
 * So, we need an ellipse that *just barely touches* the diamond, as in the picture.
 * Now, here is the key point.  No matter what the orientation of the ellipses is--pointing upward, downward, rather flat or whatever--**the spot of barely touching will almost certainly be one of the four corners of the diamond**.* 
 * And each of the corners has either b<sub>1</sub> = 0 or b<sub>2</sub> = 0. This means we're not using one of
@@ -31,8 +32,8 @@ is a better drawing than what I drew on the board today. Here is how I explained
 
 All right, then what about the right-hand picture?
 
-* Here the constraint is b<sub>1</sub><sub>2</sub> + b<sub>2</sub><sub>2</sub> &leq; d. 
-* ^ No corners here. The b we choose--again, smallest ellipse subject to be within the circle--will almost certainly have neither b<sub>1</sub> = 0 nor b<sub>2</sub> = 0, thus no dimension reduction.
+* Here the constraint is b<sub>1</sub><sup>2</sup> + b<sub>2</sub><sup>2</sup> &leq; d. 
+* No corners here. The b we choose--again, smallest ellipse subject to being within the circle--will almost certainly have neither b<sub>1</sub> = 0 nor b<sub>2</sub> = 0, thus no dimension reduction.
 * We still do attain shrinkage, and ridge is much easier to compute, so it is still popular.
 
 For either LASSO or ridge, how do we choose the hyperparameter? As usual, one way is to do cross-validation. We try various values of d, recording the test set accuracy that each gives us in the holdout set, choosing whatever d gives us the smallest value.
