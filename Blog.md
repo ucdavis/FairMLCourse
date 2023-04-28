@@ -3,12 +3,48 @@
 
 **Spring 2023**
 
+**April 28, 0930:**
+
+Directions for interactive grading. 
+
+* You will come in to the grading session, as a group. 
+
+* Each person will be asked two to four questions. 
+
+* Some questions will be about your homework submission, such as "What
+  does this line of code do?" and "What would change if the prompt had
+been such and such?"
+
+*  Other questions will be about the course itself, such as
+"Explain how Random Forests work" and "Discuss overfitting in the
+context of k-Nearest Neighbors."
+
+* Some questions may be of a followup nature, say of the form,
+  "Following up on what your teammate X said just now, what about such
+and such?"
+
+* Sessions scheduled during the discussion section will be held in the
+  classroom.  While you are waiting your turn, please sit quietly at the
+back of the room, so as not to distract the group being graded.
+
+* All other sessions will be done in my office, 3053 Kemper. Please wait
+  in the hallway while you're waiting for your group to be graded. 
+
+* You are welcome to bring in any materials you want, including your
+homework, our readings and so on.
+
+* Regrades:  If you feel that your grade was "inaccurate," you are
+  welcome to request a regrade.  Note that the regrade will not consist
+of re-evaluating the quality of you submitted work and performance in
+interactive grading.  Instead, it will consist of my asking you further
+questions of the type described above; questions about the course
+material will predominate here.
+
 **April 27, 1850:**
 
 [Here](https://towardsdatascience.com/lasso-and-ridge-regression-an-intuitive-comparison-3ee415487d18) 
 
 ![alt text](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Sxb7OPYTp5FAkQ72YrXrIA.png)
-
 
 is a better drawing than what I drew on the board today. Here is how I explained it.
 * Say we are estimating the population mean of a p-component vector. If the vector is just height, then p = 1; for height and weight, p = 2; for height, weight and age, p = 3, etc.
