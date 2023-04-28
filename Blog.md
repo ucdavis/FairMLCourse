@@ -11,9 +11,10 @@
 * So, some people thought, "If it's good to shrink our estimate of an unconditional mean, then maybe we should do the same for estimating regression functions, which are conditional means."
 * In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. (Again, there is a question of by how much we should shrink, but put that aside for a moment.) Let p denote the number of component of &beta;.
 * By centering Y and all the X features, i.e. subtracting their mean, they all have mean 0, which one can show implies that we can assume b<sub>0</sub> = 0.
-* The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first.
-* It can be shown mathematically that direct shrinking is basically equivalent to limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d.
-~                                                       
+* The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first. Denote the b that we finally obtain via LASSO by b<sub>LASSO</sub>.
+* It can be shown mathematically that direct shrinking is basically equivalent to limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
+* Note that d is a hyperparameter. for a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
+* Now, the picture on the left side, at the above link, has corners at (d,0), (0,d), (-d,0) and (0,-d), which depicts the region . So we are require to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>1</sub>| &leq; d                                  
 
 
 **April 27, 1605:**
