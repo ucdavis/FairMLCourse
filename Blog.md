@@ -17,7 +17,9 @@
 * Note that d is a hyperparameter. for a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
 * Now, the picture on the left side, at the above link, shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; rather than b.)  
 * So we requre that b<sub>LASSO</sub> be somewhere witin the diamond, including on the edges.
-* On the other hand, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS.
+* Now, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS. So the smaller ellipses are preferable.
+* Well, where does that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
+
 
                           
 
