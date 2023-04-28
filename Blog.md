@@ -21,7 +21,7 @@ is a better drawing than what I drew on the board today. Here is how I explained
 The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first. Denote the b that we finally obtain via LASSO by b<sub>LASSO</sub>.
 * We will achieve shrinking by limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
 * Note that d is a hyperparameter. For a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
-* Now, the picture on the left side shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; but it should be b.)  
+* Now, the picture on the left side shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). The diamond is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; but it should be b.)  
 * So we require that b<sub>LASSO</sub> be somewhere within the diamond, including on the edges.
 * Now, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS. So the smaller ellipses are preferable.
 * As noted, b<sub>OLS</sub> is the unique minimizer of SS, so its "ellipse" has degenerated to a single point.
