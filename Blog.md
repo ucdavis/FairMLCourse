@@ -27,7 +27,7 @@ The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of do
 * As noted, b<sub>OLS</sub> is the unique minimizer of SS, so its "ellipse" has degenerated to a single point.
 * Well, where does all that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
 * So, we need an ellipse that *just barely touches* the diamond, as in the picture.
-* Now, here is the key point.  No matter what the orientation of the ellipses is--pointing upward, downward, rather flat or whatever--**the spot of barely touching will almost certainly be one of the four corners of the diamond**.* 
+* Now, here is the key point.  No matter what the orientation of the ellipses is--pointing upward, downward, rather flat or whatever--**the spot of barely touching will almost certainly be one of the four corners of the diamond**
 * And each of the corners has either b<sub>1</sub> = 0 or b<sub>2</sub> = 0. This means we're not using one of
  the features, i.e. we've done *feature selection* and *dimension reduction*. This is appealing, to try to prevent overfitting.
 
