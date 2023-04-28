@@ -19,7 +19,10 @@
 * So we requre that b<sub>LASSO</sub> be somewhere witin the diamond, including on the edges.
 * Now, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS. So the smaller ellipses are preferable.
 * Well, where does that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
-
+* So, we need an ellipse that *just barely touches* the diamond, as in the picture.
+* Now, here is the key point.  No matter what the orientation of the ellipses is--pointing upward, downward, rather flat or whatever--**the spot of barely touching will almost certainly be one of the four corners of the diamond**.* 
+* And each of the corners has either b<sub>1</sub> = 0 or b<sub>2</sub> = 0. This means we're not using one of
+ the features, i.e. we've done *feature selection* and *dimension reduction*. This is appealing, to try to prevent overfitting.
 
                           
 
