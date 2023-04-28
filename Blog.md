@@ -17,7 +17,8 @@ is a better drawing than what I drew on the board today. Here is how I explained
 * In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. 
 * By centering Y and all the X features, i.e. subtracting their means, they all have mean 0, which one can show implies that we can assume b<sub>0</sub> = 0. And here we view the case p = 2.
 * So the OLS estimate minimizes SS = &Sigma;<sub>i</sub> [Y<sub>i</sub> - (b<sub>1 X<sub>1i</sub></sub> + b<sub>2</sub> X<sub>2i</sub>)]<sup>2</sup>. It's important to note that our b<sub>LASSO</sub> will NOT achieve such a small value of SS; b<sub>OLS</sub> is the unique minimizer.
-* The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first. Denote the b that we finally obtain via LASSO by b<sub>LASSO</sub>.
+
+The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first. Denote the b that we finally obtain via LASSO by b<sub>LASSO</sub>.
 * We will achieve shrinking by limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
 * Note that d is a hyperparameter. For a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
 * Now, the picture on the left side shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; but it should be b.)  
