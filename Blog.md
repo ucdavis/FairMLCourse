@@ -7,10 +7,14 @@
 
 (Here)[https://towardsdatascience.com/lasso-and-ridge-regression-an-intuitive-comparison-3ee415487d18] is a better drawing than what I drew on the board today. Here is how I explained it.
 * Say we are stimating the population mean of a p-component vector. If the vector is just height, then p = 1; for height and weight, p = 2; for height, weight and age, p = 3, etc.
-* James-Stein theory says that p = 1 or 2,the straightforward approach, i.e. using as our estimate the vector of the p sample means is optimal (min mean squared error in estimating the population mean vector). But if p is 3 or more,the optimal strategy is to multiply that sample mean vector by a number in (0,1), say 0.9. The theory givss a formula for the actual multipliicative constant, but the details are not important for us.
+* *James-Stein theory* says that p = 1 or 2,the straightforward approach, i.e. using as our estimate the vector of the p sample means is optimal (min mean squared error in estimating the population mean vector). But if p is 3 or more,the optimal strategy is to multiply that sample mean vector by a number in (0,1), say 0.9. The theory givss a formula for the actual multipliicative constant, but the details are not important for us.
 * So, some people thought, "If it's good to shrink our estimate of an unconditional mean, then maybe we should do the same for estimating regression functions, which are conditional means."
-* In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. (Again, there is a question of by how much we should shrink, but put that aside for a moment.)
+* In the linear regression setting, where we are estimating a population coefficients vector &beta;, let b<sub>OLS</sub> denote the Ordinary Least Squares (OLS) estimate of &beta;. (Again, there is a question of by how much we should shrink, but put that aside for a moment.) Let p denote the number of component of &beta;.
+* By centering Y and all the X features, i.e. subtracting their mean, they all have mean 0, which one can show implies that we can assume b<sub>0</sub> = 0.
 * The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of doing this, including the *LASSO* and *ridge regression*. Let's consider the LASSO first.
+* It can be shown mathematically that direct shrinking is basically equivalent to limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d.
+~                                                       
+
 
 **April 27, 1605:**
 
