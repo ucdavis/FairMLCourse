@@ -24,6 +24,14 @@
 * And each of the corners has either b<sub>1</sub> = 0 or b<sub>2</sub> = 0. This means we're not using one of
  the features, i.e. we've done *feature selection* and *dimension reduction*. This is appealing, to try to prevent overfitting.
 
+All right, then what about the right-hand picture?
+
+* Here the constraint is b<sub>1</sub><sub>2</sub> + b<sub>2</sub><sub>2</sub> &leq; d. 
+* ^ No corners here. The b we choose--again, smallest ellipse subject to be within the circle--will almost certainly have neither b<sub>1</sub> = 0 nor b<sub>2</sub> = 0, thus no dimension reduction.
+* We still do attain shrinkage, and ridge is much easier to compute, so it is still popular.
+
+For either LASSO or ridge, how do we choose the hyperparameter? As usual, one way is to do cross-validation. We try various values of d, recording the test set accuracy that each gives us in the holdout set, choosing whatever d gives us the smallest value.
+
                           
 
 
