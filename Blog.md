@@ -22,7 +22,7 @@ The idea is then to somehow shrink b<sub>OLS</sub>. There are various ways of do
 * We will achieve shrinking by limiting the size of b.  In the LASSO case, we constrain b so that |b<sub>1</sub>| + |b<sub>2</sub>| + ... + |b<sub>p</sub>| &leq; d. 
 * Note that d is a hyperparameter. For a very large d, we have no constraint, and b<sub>LASSO</sub> = b<sub>OLS</sub>. But the samller the value of d, the more shrinkage we are imposing.
 * Now, the picture on the left side shows the case p = 2. It has corners at (d,0), (0,d), (-d,0) and (0,-d). So we are required to choose our b somewhere in that diamond, which is the region |b<sub>1</sub>| + |b<sub>2</sub>| &leq; d. (The picture labels the axes &beta; but it should be b.)  
-* So we requre that b<sub>LASSO</sub> be somewhere witin the diamond, including on the edges.
+* So we require that b<sub>LASSO</sub> be somewhere within the diamond, including on the edges.
 * Now, look at those ellipses.  We have a different ellipse for each potential value of SS.  For a given such value, the ellipse is the locus of points b that produce that value of SS. So the smaller ellipses are preferable.
 * As noted, b<sub>OLS</sub> is the unique minimizer of SS, so its "ellipse" has degenerated to a single point.
 * Well, where does all that leave us, in choosing b? On the one hand, we want a b that lies on a small ellipse, but on the other hand, we are required to choose a b that lies within the diamond.
