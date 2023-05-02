@@ -5,6 +5,19 @@
 
 **May 1, 2045:**
 
+Problem 1 of Hwk 2 is now on our GitHub repo.
+
+**PLEASE, IF AT ALL POSSIBLE, READ IT BEFORE CLASS TOMORROW.**  
+
+We will discuss it in class tomorrow, and it's best if you are prepared
+to understand my comments.
+
+The specs are very long, and though in the end you'll see that it was
+actually simple, at first you'll find it challenging just to understand
+the goals.
+
+**May 1, 2045:**
+
 In interactive grading, each group will be asked different questions, but
 there may be some overlap.  Do not divulge to other groups the questions
 asked of you.
