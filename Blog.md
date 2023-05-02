@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**May 1, 2045:**
+
+In interactive grading, each group will be asked different questions, but
+there may be some overlap.  Do not divulge to other groups the questions
+asked of you.
+
 **April 28, 0930:**
 
 Directions for interactive grading. 
