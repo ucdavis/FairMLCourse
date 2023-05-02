@@ -3,9 +3,9 @@
 
 ## Due 
 
-## Problem 1
+# Problem 1
 
-### Goal: 
+## Goal: 
 
 In recent years, there has been much criticism from politically-liberal
 educators of the use of standardized tests as school admissions criteria.
@@ -17,11 +17,11 @@ Critics of the SAT cite
 student's SAT scores and her family's income.  The test measures family
 wealth, not academic readiness, they say.
 
-Defenders of the SAT cite
-other research and the stellar performance of many East Asian or East
-European children of 
+On the other hand, defenders of the SAT cite other research and the
+stellar performance of many East Asian or East European children of
 [working-class
-immigrants](https://www.refinery29.com/en-us/2019/03/228192/stuyvesant-high-school-black-asian-students).
+immigrants](https://www.refinery29.com/en-us/2019/03/228192/stuyvesant-high-school-black-asian-students),
+despite poverty.
 
 Warning: the findings of various social science research studies are
 often contradictory.  For instance, in the area of immigration, with
@@ -37,18 +37,31 @@ way they frame the research question itself is badly flawed, with
 unconscious assumptions and missing key aspects.
 
 These points will often arise in our course, but in the case of this
-assignment, our role will be rather different.  We will ask, can we make
-use of the SAT etc. in a way that is fair, in spite of possible
-connections to family income?
+assignment, our role will be rather different.  We will consider a
+compromise: Can we make use of the SAT etc. in a way that is fair, in
+spite of possible connections to family income?
 
 The central idea will be to ask, e.g. how well did this student do on
 the SAT, *relative to his family income group*?   We want to convert a
 raw SAT of say, 1250, which might be on the 80th percentile overall but
-is in the 92nd percentile at his income level.
+is in the 92nd percentile at his income level.  The thinking is, "This
+applicant was handicapped by growing up in a low-income family, but did
+quite well for that group.  Seems to be a bright person, worth
+admitting.''
 
-### Details
+In an ML context, we have our training data, including an SAT column.
+After replacing the SAT column by the corresponding relative SAT column,
+we then do ML analysis as usual, predicting the outcome variable of
+interest using the training data and kNN, RFs, SVM, NNs or whatever.
 
-You will write a function with call form 
+## Details
+
+### Functions to be developed
+
+You will write two functions, one to learn the quantiles of the training
+data, and the second to determine the quantile of a new case.
+
+The first function will have call form 
 
 ```,r
     relativeProxy(data,proxyName,catName,nQuantls,nCut=NULL)
@@ -61,7 +74,7 @@ where:
 * **proxyName** is, e.g. SAT score in the above example (proxy
 for wealth)
 
-* **catName** is, e.g. family cinome in the above example; presumed to
+* **catName** is, e.g. family income in the above example; presumed to
   be a categorical variable, i.e. an R factor
 
 * **nQuantls** is the number of percentiles we'll use
@@ -77,13 +90,14 @@ the **nQuantls** of the **proxyName** column within the rows of **data**
 *for that category*.
 
 The return value will also need to record the intervals made by the
-**cut()**-like function, if any.  See below.
+**cut()**-like function, if any (see below).  Do this by attaching an R
+'attribute' to the return value.
 
 You will then write a **predict()** function for that class.  (See
 below for a review.)  The call form will be
 
 ``` r
-predict(relProxObj,newXs,proxyName,catName)
+predict(relProxObj,newCases,proxyName,catName)
 ```
 
 Here, **relProxObj** is the output of **relativeProxy()**. And **newCases**
@@ -97,10 +111,51 @@ the **cut()**-like function, if needed) to determine which element of
 new row will then be compared to these quantiles, and the quantile for
 the new row will be computed and returned.
 
-If the original **catName** data had been categorical, then **newXs**
-would be a two-column data frame
+*Example:*
+
+Again consider the SAT example.  Here we would like to predict success
+in college, say college GPA.  If an applicant is predicted to do well,
+we might decide to accept him/her, otherwise not admit.  Due to the
+controversy over the use of the SAT, we don't use it directly.  Instead,
+we replace the SAT column of our training data by *relative* quantile,
+meaning where this student's SAT score stands, *relative* to his/her
+income group.
+
+Say we choose **nQuantls** to be 5, meaning that we will partition SAT
+scores into 5 intervals, delineated by the 20th, 40th, 60th and 80th
+percentiles (in quantile terms, 0.2, 0.4, 0.6, 0.8).
+
+Say we also decide to partition family income into five groups.  We use a
+**cut()**like function, so now everyone belongs to one of five income
+groups.
+
+So we first convert all our training data as above.  The SAT column will
+be replaced by a column of relative quantiles; the value in row i will
+then be this student's relative quantile of SAT for his/her income
+group.  Let's name the output **z**.
+
+We then run kNN or whatever on the new training data (only the SAT
+column has changed).
+
+Whenever we have a new case to convert, we first convert his/her SAT,
+score, say **newSAT**, to its corresponding income class.  We then go to
+the list component in z for that class, and caclulate the proportion of
+quantiles in that class that are less than or equal to **newSAT**.  This
+will be the relative value for the new case.  This and the new person's 
+other data, e.g. high school GPA, will be used to predict this new
+person's college GPA, using the fit returned by**qeKNN()** etc.
 
 ### **cut()**-like function
+
+It would seem that R's **cut()** function is just what we need, but
+actually there is a pesky problem here.  In finding the relative
+quantile of a new case, we need to find its category, e.g. income class.
+But we can't do that, because the output of **relativeProxy()** did not
+contain a record containing the cut points.  But actually there could be
+no such record, because **cut()** does not provide such a record; it
+cuts the original data *but does not record the cut points*.
+
+So you will need to write your own **cut()**-like function.
 
 ### predict() functions in R
 
@@ -144,4 +199,43 @@ Mazda RX4
 ```
 
 Note again that **predict.lm()** is what is actually called.
+
+### Empirical study
+
+You will try this method (at least) on the **law.school.admissions**
+dataset in our collection.  Use **qeKNN()** as the ML method, with the
+default arguments.  Use only the variables **fam_inc**, **lsat**,
+**ugpa**, **cluster** and **bar**, with that last one being the outcome
+("Y") variable.  
+
+You will explore whether the relative-quantile concept is worthwhile,
+computing:
+
+* utility and fairness if the LSAT is used
+
+* utility and fairness if relative-LSAT is used, with income as the "cat"
+  variable
+
+* utility and fairness if neither is used
+
+Note that you will never use income directly, i.e. the income column
+will not be fed into **qeKNN()**.
+
+Criteria:
+
+* Measure utility by "testAcc".
+
+* Measure fairness by the Kendall correlation between income and predicted Y.
+
+Of course, use **replicMeans()**.
+
+### BEFORE YOU START
+
+Before starting work on this assignment, make absolutely sure you fully
+understand the fairness goals and how the relative-quantiles notion fits
+into them, as well as how the design of the empirical study fits into
+them. 
+
+The better you understand these things beforehand, the easier your
+actual coding will be.  In terms of coding, it's not difficult. 
 
