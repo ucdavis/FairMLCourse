@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**May 2, 1745:**
+
+Since we will now be holding some interactive grading sessions Thursday 3-4, I am changing the venue:  Now all sessions, even those during the discussion section, will be held in my office, Kemper 3053.
+
+By the way, if any group scheduled for this Thursday wishes to postpone until next week, please let me know.
+
 **May 1, 2045:**
 
 Problem 1 of Hwk 2 is now on our GitHub repo.
