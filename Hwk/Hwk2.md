@@ -239,3 +239,54 @@ them.
 The better you understand these things beforehand, the easier your
 actual coding will be.  In terms of coding, it's not difficult. 
 
+# Problem 2
+
+Say we are predicting some variable of interest Y, from a vector X that
+includes both a sensitive variable S and a correlate C of S.  (So C is a
+proxy for S.)
+
+Say we exclude S but still would like to include C.  There are various
+ways to do the latter, some of which we will explore later in our
+class.  Of course, any such method is a compromise, in between excluding
+C, thus foregoing its possible predictive power, and fully including C,
+thus causing a fairness issue.
+
+In this problem, you will investigate a very simple approach:  Directly
+reduce the weight of C in our prediction algorithm.  The **qeKNN**
+function can do this via its **expandVars** and **expandVals** optional
+arguments.  Here are the details:
+
+* **expandVars** is an R character vector, consisting of names of the
+  columns we wish to deweight
+
+* **expandVals** is a numeric vector of deweighting values
+
+Say our data 'd' has columns named 'y', 'u', 'v' and 'w'.  The call
+
+```,r
+qeKNN(d,'y',expandVars=c('u','w'),expandVals=c(0.7,0.2)
+```
+
+would change the distance computation of near neighbors.  The 'u' column
+would be shrunken to 0.7 its original size, with a 0.2 factor applied to
+'w'.  This should be used with **scaleX = TRUE** (the shrinking is done
+after the scaling).
+
+Try ths on the **pef** dataset that is included with **qeML**.  Take Y,
+S and C to be **wageinc**, **sex** and **occ**, respectively.  So, you
+will exclude S altogether, but use C in a limited manner.
+
+Try many values of the deweighting factor D, and plot the resulting
+values of fairness and utility against D.  Use the same criteria for
+fairness and utility as in Problem 1.
+
+# General Note
+
+I like to tell my research students, "All chemistry experiments work,"
+meaning that one might set up an experiment to investigate some theory,
+only to find the theory is unsupported.  Such negative results might be
+disappointing, but they do advance science; every finding is worthy.
+
+In the problems in this assignment, don't count on dramatic outcomes.
+Whatever comes out in the end is of interest.
+
