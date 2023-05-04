@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**May 3, 2330:**
+
+In Hwk 1, some groups did the Extra Credit problem involving finding a dataset that exhibits Simpson's Paradox with a continuous variable, **but did not give me a URL** for obtaining the data. If you had such an omission, please let me know the URL.
+
 **May 3, 2155:**
 
 The second (and last) problem in Hwk 2 is now ready.
