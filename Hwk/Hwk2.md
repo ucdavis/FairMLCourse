@@ -1,7 +1,7 @@
 
 # Homework 2
 
-## Due 
+## Due Thursday, May 11, 11:59 pm
 
 # Problem 1
 
