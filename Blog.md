@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**May 3, 2155:**
+
+The second (and last) problem in Hwk 2 is now ready.
+
 **May 2, 1745:**
 
 Since we will now be holding some interactive grading sessions Thursday 3-4, I am changing the venue:  Now all sessions, even those during the discussion section, will be held in my office, Kemper 3053.
