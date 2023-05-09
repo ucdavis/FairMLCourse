@@ -3,9 +3,22 @@
 
 **Spring 2023**
 
+**May 8, 1900:**
+
+In Problem 2 of the Homework, it says to take C to be **occ**.  But the
+**expand()** arguments in **qeKNN()** are only for numeric arguments.
+Thus you will need to use the dataset **pef1** instead of **pef**, where
+the former is identical to the latter except that the **occ** column in
+the latter has been replaced by 5 columns of dummy variables.  Then use
+will apply the **expand()** arguments to the 5 dummies.
+
+Use **regtools::factorsToDummies()** to create the dummies, as **qeML()** 
+does.  To familiarize yourself with that function, I suggest that you
+first try it on the first two rows of **pef**.W
+
 **May 2, 1745:**
 
-Since we will now be holding some interactive grading sessions Thursday 3-4, I am changing the venue:  Now all sessions, even those during the discussion section, will be held in my office, Kemper 3053.
+Since we will now be holding some interactive grading sessions Thursday 3-4, I am changing the venue:  Now all sesions, even those during the discussion section, will be held in my office, Kemper 3053.
 
 By the way, if any group scheduled for this Thursday wishes to postpone until next week, please let me know.
 
