@@ -1,7 +1,7 @@
 
 # Homework 2
 
-## Due Thursday, May 11, 11:59 pm
+## Due Friday, May 12, 11:59 pm
 
 ## TA's note:
 One minor change when submitting your group tar file on CSIF.
@@ -211,10 +211,10 @@ Note again that **predict.lm()** is what is actually called.
 ### Empirical study
 
 You will try this method (at least) on the **law.school.admissions**
-dataset in our collection.  Use **qeKNN()** as the ML method, with the
-default arguments.  Use only the variables **fam_inc**, **lsat**,
-**ugpa**, **cluster** and **bar**, with that last one being the outcome
-("Y") variable.  
+dataset in our collection.  Use **qeKNN()** (or other, see below) as the
+ML method, with the default arguments.  Use only the variables
+**fam_inc**, **lsat**, **ugpa**, **cluster** and **bar**, with that last
+one being the outcome ("Y") variable.  
 
 You will explore whether the relative-quantile concept is worthwhile,
 computing:
@@ -236,6 +236,24 @@ Criteria:
 * Measure fairness by the Kendall correlation between income and predicted Y.
 
 Of course, use **replicMeans()**.
+
+*Outline:*
+
+* Write **relativeProxy()**.
+
+* Call **relativeProxy()** on the **lsat** and **fam_inc** columns
+of the law school dataset, with output **w**.
+
+* Using **predict.relativeProxy()** and **w**, convert the **lsat**
+  column of the law school dataset to a vector of relative quantiles 
+(numbers between 0 and 1) **u**. 
+
+* Replace the **lsat** column of the law school by **u**, and remove the
+  **fam_inc** column.
+
+* Then do the ML analysis on that modified dataset, using whatever ML
+  function you wish from **qeML** (kNN, linear, logit, poly, LASSO, SVM,
+NNs or even others.
 
 ### BEFORE YOU START
 
