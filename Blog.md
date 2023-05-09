@@ -14,7 +14,22 @@ will apply the **expand()** arguments to the 5 dummies.
 
 Use **regtools::factorsToDummies()** to create the dummies, as **qeML()** 
 does.  To familiarize yourself with that function, I suggest that you
-first try it on the first two rows of **pef**.W
+first try it on the first two rows of **pef**.
+
+Make absolutely sure that you understand 
+
+* why we have only 5 dummies, not 6, and
+
+* why simply call **as.numeric()** the **occ** column would be nonsense
+
+**May 3, 2330:**
+
+In Hwk 1, some groups did the Extra Credit problem involving finding a dataset that exhibits Simpson's Paradox with a continuous variable, **but did not give me a URL** for obtaining the data. If you had such an omission, please let me know the URL.
+
+**May 3, 2155:**
+
+The second (and last) problem in Hwk 2 is now ready.
+>>>>>>> e74a319b9e62b01da52e1c3114c4f6ee71c8ed9f
 
 **May 2, 1745:**
 

@@ -1,7 +1,15 @@
 
 # Homework 2
 
-## Due 
+## Due Thursday, May 11, 11:59 pm
+
+## TA's note:
+One minor change when submitting your group tar file on CSIF.
+On CSIF, use the **handin** command. to submit your file to Yuyi:
+
+```
+$ handin lyy ecs189GHwk2 your_group_member_email_addrs.tar
+```
 
 # Problem 1
 
