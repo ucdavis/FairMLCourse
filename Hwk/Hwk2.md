@@ -23,7 +23,9 @@ school) and the LSAT (law school), especially the SAT.
 Critics of the SAT cite
 [research](https://budgetmodel.wharton.upenn.edu/issues/2021/9/28/is-income-implicit-in-measures-of-student-ability) showing a correlation between a
 student's SAT scores and her family's income.  The test measures family
-wealth, not academic readiness, they say.
+wealth, not academic readiness, they say.(Even the training data will be considered "new cases"; see outline 
+below.
+
 
 On the other hand, defenders of the SAT cite other research and the
 stellar performance of many East Asian or East European children of
@@ -247,7 +249,7 @@ Of course, use **replicMeans()**.
 * Call **relativeProxy()** on the **lsat** and **fam_inc** columns
 of the law school dataset, with output **w**.
 
-* Using **predict.relProxy()** and **w**, convert the **lsat**
+* Using **predict.relProx()** and **w**, convert the **lsat**
   column of the law school dataset to a vector of relative quantiles 
 (numbers between 0 and 1) **u**. 
 
@@ -256,7 +258,8 @@ of the law school dataset, with output **w**.
 
 * Then do the ML analysis on that modified dataset, using whatever ML
   function you wish from **qeML** (kNN, linear, logit, poly, LASSO, SVM,
-NNs or even others.
+NNs or even others). Note that you will NOT call **relativeProxy()** here;
+you've already transformed the data.
 
 ### BEFORE YOU START
 
