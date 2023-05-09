@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**May 8, 1955:**
+
+I've now added an outline to Problem 1. I believe that will clear things up for you. Also, I've expanded 
+the paragraph in the Goal section that begins with "The central idea is..."
+
+I've pushed back the due date by one day. I don't think more is needed, with the outline added.
+The code itself is not hard.
+
+Please note that you are always welcome to ask me questions in e-mail.
+
 **May 8, 1900:**
 
 In Problem 2 of the Homework, it says to take C to be **occ**.  But the
