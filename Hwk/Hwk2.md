@@ -247,7 +247,7 @@ Of course, use **replicMeans()**.
 * Call **relativeProxy()** on the **lsat** and **fam_inc** columns
 of the law school dataset, with output **w**.
 
-* Using **predict.relativeProxy()** and **w**, convert the **lsat**
+* Using **predict.relProxy()** and **w**, convert the **lsat**
   column of the law school dataset to a vector of relative quantiles 
 (numbers between 0 and 1) **u**. 
 
