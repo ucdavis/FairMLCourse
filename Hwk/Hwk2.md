@@ -58,7 +58,7 @@ is in the 92nd percentile at his income level.  The thinking is, "This
 applicant was handicapped by growing up in a low-income family, but did
 quite well for that group.  Seems to be a bright person, worth
 admitting.''  We use those adjusted quantile vales for prediction/admittance; 
-e.g. that 1250 score will be replaced by 0.92.W
+e.g. that 1250 score will be replaced by 0.92.
 
 In an ML context, we have our training data, including an SAT column.
 After replacing the SAT column by the corresponding relative SAT column,
