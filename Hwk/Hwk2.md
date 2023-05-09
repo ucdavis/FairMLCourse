@@ -68,7 +68,9 @@ interest using the training data and kNN, RFs, SVM, NNs or whatever.
 ### Functions to be developed
 
 You will write two functions, one to learn the quantiles of the training
-data, and the second to determine the quantile of a new case.
+data, and the second to determine the quantile of a new case. (Even the training 
+data will be considered "new cases"; see outline below.)
+
 
 The first function will have call form 
 
