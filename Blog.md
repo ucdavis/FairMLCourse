@@ -27,7 +27,7 @@ graph fairness against d
 Concerning Problem 1:
 
 [S3 classes in R](https://github.com/matloff/fasteR#s3) are quite
-simple:  Create an R list, then call class() to set the class type.
+simple:  Create an R list, then call **class()** to set the class type.
 
 E.g.
 
