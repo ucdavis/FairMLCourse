@@ -5,13 +5,12 @@
 
 **May 9, 2250:**
 
-Concerning Problem 2:  Recall that originally I had specified the **occ** variab
-le for deweighting.  That would have been a single number.  But then I remembere
-d that **qeKNN()** does not handle deweighting for R factors, so I said you'll h
-ave to preprocess the data, replacing the **occ** column by 5 dummy-variable col
-umns.  Let's refer to the new data frame as pef1.
+Concerning Problem 2:  Recall that originally I had specified the **occ** variable for deweighting. 
+That would have been a single number.  But then I remembered that **qeKNN()** does not handle 
+deweighting for R factors, so I said you'll have to preprocess the data, replacing the **occ** column 
+by 5 dummy-variable columns.  Let's refer to the new data frame as pef1.
 
-But, since use the same deweighting factor for each of the dummies.
+But, still use the same deweighting factor for each of the dummies.
 
 So, your code will do
 
