@@ -3,6 +3,43 @@
 
 **Spring 2023**
 
+**May 9, 2250:**
+
+Concerning Problem 2:  Recall that originally I had specified the **occ** variab
+le for deweighting.  That would have been a single number.  But then I remembere
+d that **qeKNN()** does not handle deweighting for R factors, so I said you'll h
+ave to preprocess the data, replacing the **occ** column by 5 dummy-variable col
+umns.  Let's refer to the new data frame as pef1.
+
+But, since use the same deweighting factor for each of the dummies.
+
+So, your code will do
+
+```
+for (d in your chosen set of d values)
+   call qeKNN() on pef1 for that d
+   record the utility for that fit
+   record the fairness for that fit
+
+graph utility against d
+graph fairness against d
+```
+
+Concerning Problem 1:
+
+[S3 classes in R](https://github.com/matloff/fasteR#s3) are quite
+simple:  Create an R list, then call class() to set the class type.
+
+E.g.
+
+``` r
+w <- list(a = 3, b = 8, u = 'xyz')
+class(w) <- 'q'
+```
+
+This creates an object of class 'u', and assigns it to **w**.
+
+
 **May 8, 1955:**
 
 I've now added an outline to Problem 1. I believe that will clear things up for you. Also, I've expanded 
