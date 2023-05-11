@@ -17,7 +17,7 @@ consists of an R list, then "annointed" with a class name.
 
 As mentioned, a cool feature of all this is the notion of *generic*
 functions:  **predict()**, **print()**, **plot()**, **summary()** etc.
-So I try load some new package, knowing very little about it, then try
+Say I try load some new package, knowing very little about it, then try
 one of their examples, and the call, say, **plot()** on the result.  As
 long as the authors wrote an implementation, this will give me a plot,
 again without my knowing much.
@@ -74,6 +74,8 @@ $newThing
 attr(,"class")
 [1] "weird"
 ```
+
+Some may feel that this is "unsafe," and for them there are the "safer" S4 and so on.
 
 **May 9, 2250:**
 
