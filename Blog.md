@@ -3,6 +3,78 @@
 
 **Spring 2023**
 
+**May 10, 1820:**
+
+One of my goals in Hwk 2 is to familiarize you with R class structures.
+There is the basic class structure S3, then S4, reference clases and so
+on.  R is both a functional and an OOP language, and this illustrates
+the latter point.  Yesterday I gave a link to my R tutorial on this, but
+here is a little more:
+
+S3 is the basic structure, used in most of the R functions, both in R
+itself and in contributed R packages.  It couldn't be simpler:  It
+consists of an R list, then "annointed" with a class name.
+
+As mentioned, a cool feature of all this is the notion of *generic*
+functions:  **predict()**, **print()**, **plot()**, **summary()** etc.
+So I try load some new package, knowing very little about it, then try
+one of their examples, and the call, say, **plot()** on the result.  As
+long as the authors wrote an implementation, this will give me a plot,
+again without my knowing much.
+
+Recall that the term used is *dispatch*.  We say that for example 
+**plot()**, applied to an object of class 'q' say, will be "dispatched" to
+**plot.q()**.
+                                                                   
+Usually the components of an S3 object have names, but they need not.
+For instance:   
+
+```,r
+> x <- list(5,12,13,'hyp')
+> x
+[[1]]
+[1] 5
+
+[[2]]
+[1] 12
+
+[[3]]
+[1] 13
+
+[[4]]
+[1] "hyp"
+
+> class(x) <- 'weird'
+> summary.weird <- function(weirdObject) weirdObject[[1]]
+> summary(x)
+```
+Of course, it's nicer to have component names, as it is clearer, and facilitates adding
+other components later. 
+
+Note the user him/herself can add them to any S3 object! 
+
+```,r
+> x$newThing <- 168
+> x
+[[1]]
+[1] 5
+
+[[2]]
+[1] 12
+
+[[3]]
+[1] 13
+
+[[4]]
+[1] "hyp"
+
+$newThing
+[1] 168
+
+attr(,"class")
+[1] "weird"
+```
+
 **May 9, 2250:**
 
 Concerning Problem 2:  Recall that originally I had specified the **occ** variable for deweighting. 
