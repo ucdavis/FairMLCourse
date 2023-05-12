@@ -3,6 +3,25 @@
 
 **Spring 2023**
 
+**May 12, 0010:**
+
+Now done with interactive grading for Hwk 1.  I have to look at Yuyi's numerical scores on running your code, and her notes on the interactive sessions, before setting the Hwk 1 grades, but I have some comments now.
+
+* With a couple of exceptions, most of you did well on the questions 
+about your code.
+
+* There were a number of students who did quite poorly on the questions 
+on the general course material, though.  I think the questions were straightforward, e.g. "Tell me about SVM" and "What is the learning rate?"  In a number of cases, the student had either no answer or offered an irrelevant comment.
+
+This is a very serious issue.  In deciding not to have quizzes, the interactive grading was supposed to take on this aspect of grading.  The questions were very basic, and not deep.
+
+If you end up with a low grade (C, D or F) on your answers on the general course material, I urge you to do a regrade.  As mentioned before, it will consist of more questions of the same type.  I am 100% sure you can do well. 
+
+I also saw a number of unfamiliar faces today. :-)  I skipped some classes back when I was a student myself, but really, it's important to come to class. :-)
+
+
+
+
 **May 11, 1925:**
 
 A correlation-based measure of fairness should be based on how much our
