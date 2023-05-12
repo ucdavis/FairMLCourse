@@ -5,7 +5,7 @@
 
 **May 12, 1615:**
 
-BTW, the longer I ramble on about some topic in class, the more likely I'll ask you about it during
+BTW, the longer I ramble on about some topic in class, the more likely it is that I'll ask you about it during
 interactive grading. :-) I've put a smiley sign here, because it *is* funny, but it's also true.
 
 **May 12, 1610:**
