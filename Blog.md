@@ -3,6 +3,19 @@
 
 **Spring 2023**
 
+**May 11, 1925:**
+
+A correlation-based measure of fairness should be based on how much our
+"forbidden" variable S affects our prediction Yhat.  We hope the impact
+is small.
+
+In Problem 2, Yhat should be our predicted wage income, and S should be
+gender.
+
+Problem 1 is unusual, and more subtle, because instead of outright
+eliminating S, we try to use it in a fairer way.  Yhat is our prediction
+regarding passing the bar, and S is family income.
+
 **May 10, 1820:**
 
 One of my goals in Hwk 2 is to familiarize you with R class structures.
