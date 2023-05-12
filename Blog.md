@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**May 12, 1610:**
+
+Every **qeML** function returns an R list, with many components, one of 
+which is **holdIdxs**.  This is a vector giving the row numbers in the full
+data set of the holdout cases.  You can get Yhat and S values from this.
+
 **May 12, 0010:**
 
 Now done with interactive grading for Hwk 1.  I have to look at Yuyi's numerical scores on running your code, and her notes on the interactive sessions, before setting the Hwk 1 grades, but I have some comments now.
