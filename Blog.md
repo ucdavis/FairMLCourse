@@ -29,7 +29,7 @@ str(logitOut$holdoutPreds)
 # those are the actual predictions for the holdout; let's take a look
 table(logitOut$holdoutPreds$predClasses)  # 20 and 980; random, could come out 0 and 1000
 # better to use the probabilities of bar passage anyway
-cor(lsa$lsat[logitOut$holdIdxs],logitOut$holdoutPreds$probs)  # about 0.84k
+cor(lsa$lsat[logitOut$holdIdxs],logitOut$holdoutPreds$probs)  # about 0.84
 ```
 
 Coments:
