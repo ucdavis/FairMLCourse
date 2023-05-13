@@ -32,6 +32,11 @@ table(logitOut$holdoutPreds$predClasses)  # 20 and 980; random, could come out 0
 cor(lsa$lsat[logitOut$holdIdxs],logitOut$holdoutPreds$probs)  # about 0.84k
 ```
 
+Coments:
+
+* R's **str()** function is a key utility. (I think I mentioned this in class, not sure.) You can tell at a glance what's inside an object. This is major, especially for packages with skimpy documentation. (Yes, that includes **qeML**; I'm still putting the finishing touches on it.)
+* Due to the all-or-nothing nature of predicted classes, it's more informative to look at the probabiliities of "Yes." This is especially true in apps where "No" is rare, such as here, but also true in general.
+
 **May 12, 1615:**
 
 BTW, the longer I ramble on about some topic in class, the more likely it is that I'll ask you about it during
