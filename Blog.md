@@ -3,6 +3,35 @@
 
 **Spring 2023**
 
+**May 13, 1505:**
+
+Some news items:
+
+* I will get Hwk 3 posted later today.
+* Hwk 3 will be the last. After that, you'll have the term project, likely due date June 12.
+* The term project will be quite open-ended, in terms of dataset, analysis and code. Re the latter,
+    you may have to do some digging.
+* For the latter and other reasons, consider the following code to find the correlation between S and Yhat:
+
+```,r
+# prep data
+load('law.school.admissions.rda')
+lsa <- law.school.admissions
+names(lsa)
+lsa <- lsa[c(4,5,6,11)]
+
+# e.g. logit model
+logitOut <- qeLogit(lsa,'bar',yesYVal='TRUE')
+# what's in that object?
+str(logitOut)  
+# ah, holdoutPreds is one component; what's in THAT?
+str(logitOut$holdoutPreds)
+# those are the actual predictions for the holdout; let's take a look
+table(logitOut$holdoutPreds$predClasses)  # 20 and 980; random, could come out 0 and 1000
+# better to use the probabilities of bar passage anyway
+cor(lsa$lsat[logitOut$holdIdxs],logitOut$holdoutPreds$probs)  # about 0.84k
+```
+
 **May 12, 1615:**
 
 BTW, the longer I ramble on about some topic in class, the more likely it is that I'll ask you about it during
