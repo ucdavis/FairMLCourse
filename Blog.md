@@ -3,6 +3,33 @@
 
 **Spring 2023**
 
+**May 17, 0900:**
+
+Either today or tomorrow, I will be posting the specs for your Term
+Project.  Note the following:
+
+* Due June 11.  (Think of it as "Problem 2" of Hwk 3.)
+* You will be analyzing a dataset of your choice (pre-approved by me),
+    using tools and perspectives from our course.
+* A professional-quality written report, prepared in LaTeX, will be required.
+* Though you'll write some supporting code, this is not a coding
+    project.  It is *analysis*, with an emphasis on interpretation.
+* Every lecture from here onward will have as one of its goal preparing
+    you for the Project--what to focus on, things to watch out for, etc.
+
+**May 14, 2135:**
+
+As I make your grades for Hwk 1, I will need **a frank self-assessment**
+of the degree to which you participated in that work.
+
+**I WILL NEED THIS FROM YOU BY WEDNESDAY, MAY 17 BY 11:59 PM.**
+
+Please notify Yuyi that you have sent me your self-assessment, so that 
+she can keep track of who is missing.  You can do so by Cc-ing her on 
+the message you send to me if you feel comfortable doing so; otherwise, 
+just send her a brief separate note that you've submitted your 
+self-assessment to me.
+
 **May 13, 1505:**
 
 Some news items:
