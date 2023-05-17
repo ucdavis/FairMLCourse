@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**May 16, 1810:**
+
+I forgot upload the image file for the Hwk 3 specs.  It's there now.
+
 **May 17, 0900:**
 
 Either today or tomorrow, I will be posting the specs for your Term
