@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**May 19, 1415:**
+
+Our [Term Project](https://github.com/ucdavis/FairMLCourse/blob/main/Hwk/TermProject.md) is now ready!
+
 **May 19, 0955:**
 
 You may find the following code useful for saving a currently-displayed R graphic image to disk:
