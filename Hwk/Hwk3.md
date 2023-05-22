@@ -38,7 +38,7 @@ where the arguments are as follows:
 *   data, yName: as in qeML functions; Y must be numeric
 *   xName: name of a numeric column
 *   sName: name of the sensitive variable, an R factor
-    condits: an R vector; each component is a character string for an R logical     expression, representing a desired condition; these must NOT involve sName
+*   condits: an R vector; each component is a character string for an R logical     expression, representing a desired condition; these must NOT involve sName
 *   qeFtn: qeML function (will use default arguments only)
 *   minS: minimum S group size; if the number of data points for a
     certain level of S is below this, that level will not be included
