@@ -90,7 +90,7 @@ variables.
 
 * It is imperative that you use a debugging tool to track down bugs.
 
-* You may find the **subset()**, **evalr()** and **sprintf()**functions 
+* You may find the **subset()**, **evalr()** and **sprintf()** functions 
     useful.  
 
 * Be careful with data types.  If you subset an R factor (whether or not you use 
