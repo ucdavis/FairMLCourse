@@ -3,6 +3,27 @@
 
 **Spring 2023**
 
+**May 22, 2145:**
+
+In order to get something out of the class (and get a good grade), it's absolutely imperative to understand the big picture, not just coding.  Here is the sequence of thought you should go through in Hwk 3.
+
+* In formulating a sentence, a judge is dealing with probabilities, e.g.
+probability that the defendant will recidivate.
+
+* The COMPAS analysis article states that age is a big factor in that
+probability.  (Younger defendants are especially risky.)
+
+* So, the question is, how does the probability of recidivism depend on
+a covariate, say age?
+
+* But is exactly what ML is for, in the case of dichotomous Y: Estimate
+the probability of something, as a function of something else.  An ML function finds mean Y for given X, and in the dichotomous case, that reduces to P(Y = 1 | X).
+
+* So, our code will run the user's specified qeML function to find a
+probability for some dichotomous Y (e.g. recidivism) against some covariate (e.g. age), and plot the relation. 
+
+
+
 **May 22, 2110:**
 
 The function **evalr()** should be in **qeML**. Yuyi lectured on it (and on **sprintf()**) on April 6.
