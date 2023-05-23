@@ -3,6 +3,23 @@
 
 **Spring 2023**
 
+**May 22, 2110:**
+
+The function **evalr()** should be in **qeML**. Yuyi lectured on it (and on **sprintf()**) on April 6.
+
+Example:
+
+```,r
+> sqrt(10)
+[1] 3.162278
+> 'sqrt(10)'
+[1] "sqrt(10)"
+> evalr('sqrt(10)')
+[1] 3.162278
+```
+
+The function "magically" allowed us to execute an expression that is contained in a character string.  See Yuyi's lecture for an example in which this is useful.
+
 **May 22, 1925:**
 
 I've pushed back the due date for Hwk 3 to Thursday. Please note, though, that you should already be starting on your Term Project.
