@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**May 22, 1925:**
+
+I've pushed back the due date for Hwk 3 to Thursday. Please note, though, that you should already be starting on your Term Project.
+
+Note again that in the Term Project **interpretation will be of the utmost importance**. You will definitely will be doing coding, but that is not the main focus.
+
 **May 19, 1415:**
 
 Our [Term Project](https://github.com/ucdavis/FairMLCourse/blob/main/Hwk/TermProject.md) is now ready!
