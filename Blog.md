@@ -3,6 +3,21 @@
 
 **Spring 2023**
 
+**May 29, 0950:**
+
+Very sorry for the delay in getting you your homework grades.  Our switching from quizzes to increased emphasis on homework early in the quarter was a good decision, but it does have its costs.  I should be getting you your Homework 1 grades sometime today.  
+
+Please do NOT ask me the basis for the grade I've assigned you.  As we discussed in making the decision to switch away from quizzes, one consequence is that the grading becomes much more subjective.  This cannot be "relitigated."
+
+However, as I wrote in my blog post of April 28, 0930, if you believe your grade was inaccurate, I will be happy to do a regrade with you.  This will consist of asking you questions about our coursework, as in our interactive grading.
+
+Our course material is cumulative, and thus so would be the content of the regrade questions, but of course the main emphasis would be on more recent material.
+
+If your regrade answers are poor, I will NOT reduce your original grade.  Thus "there is no harm in trying."  However, if you did poorly in the original grading, it was likely due to a basic lack of knowledge of the course material.  For example, a few students could not give even a basic response to my open-ended question, "Tell me about SVM," and unfortunately it is likely that they would do equally poorly in questions I put to them in a regrade.
+
+The course material has been difficult, but very important, I believe.  You've learned at least some things that you will carry with you after the course ends, concerning the basid issues of machine learning and how the fairness issue interacts with them.  That's as much as any course instructor can hope for, and I hope your course grades will reflect that.  As I've mentioned, a good term project can greatly compensate for lower homework grades.
+
+
 **May 22, 2145:**
 
 In order to get something out of the class (and get a good grade), it's absolutely imperative to understand the big picture, not just coding.  Here is the sequence of thought you should go through in Hwk 3.
