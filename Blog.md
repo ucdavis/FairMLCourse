@@ -15,7 +15,7 @@ Our course material is cumulative, and thus so would be the content of the regra
 
 If your regrade answers are poor, I will NOT reduce your original grade.  Thus "there is no harm in trying."  However, if you did poorly in the original grading, it was likely due to a basic lack of knowledge of the course material.  For example, a few students could not give even a basic response to my open-ended question, "Tell me about SVM," and unfortunately it is likely that they would do equally poorly in questions I put to them in a regrade.
 
-The course material has been difficult, but very important, I believe.  You've learned at least some things that you will carry with you after the course ends, concerning the basid issues of machine learning and how the fairness issue interacts with them.  That's as much as any course instructor can hope for, and I hope your course grades will reflect that.  As I've mentioned, a good term project can greatly compensate for lower homework grades.
+The course material has been difficult, but very important, I believe.  You've learned at least some things that you will carry with you after the course ends, concerning the basic issues of machine learning and how the fairness issue interacts with them.  That's as much as any course instructor can hope for, and I hope your course grades will reflect that.  As I've mentioned, a good term project can greatly compensate for lower homework grades.
 
 
 **May 22, 2145:**
