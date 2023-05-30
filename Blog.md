@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**May 30, 1520:**
+
+Please make sure to sign up with an [interactive grading slot](https://docs.google.com/spreadsheets/d/10npR9_39i4MXnbUHZ9bDmNFmh9NBV9omfIWsyT9QZyk/edit?usp=sharing) soon.
+
 **May 29, 1725:**
 
 In the STDERRS lesson of the stat tutorial, "In the case of an estimator, q here" should read "
