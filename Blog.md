@@ -3,6 +3,11 @@
 
 **Spring 2023**
 
+**May 29, 1725:**
+
+In the STDERRS lesson of the stat tutorial, "In the case of an estimator, q here" should read "
+In the case of an estimator, Q here".
+
 **May 29, 0950:**
 
 Very sorry for the delay in getting you your homework grades.  Our switching from quizzes to increased emphasis on homework early in the quarter was a good decision, but it does have its costs.  I should be getting you your Homework 1 grades sometime today.  
