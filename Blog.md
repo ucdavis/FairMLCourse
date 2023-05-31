@@ -21,7 +21,7 @@ To expand on what I said today about the suitability of datasets for our Term Pr
 
    <tr>
    <td>harm comes from society</td>
-   <td>harm comes from algorithm</td>
+   <td>harm comes from an algorithm</td>
    </tr>
 
    <tr>
@@ -33,7 +33,7 @@ To expand on what I said today about the suitability of datasets for our Term Pr
 
 In our pef dataset, for instance, it would be interesting to investigate the nature of a gender pay gap--but that is a statistics problem, not one in fair ML.
 
-A quick test:  Does the method you developed in Problem 2, Homework 2, have any relevance to the dataset under consideration?  If not, then it probably isn't suitable for our Term Project.
+A quick test:  Does the method you developed in Problem 2, Homework 2, have any relevance to the dataset under consideration?  If not, then the dataset probably isn't suitable for our Term Project.
 
 I also mentioned that you can probably force an unsuitable dataset to be suitable, by conjuring up some scenario.  In the pef data, say, you might think of a scenario in which we want to give some prize to random people based on their occupation.  If our prediction includes gender as a feature, that probably would be unfair, as women in the pef dataset are more concentrated in some occupations.  OK, now you have fair ML setting, but whatever paper you cite that uses the pef data, it almost certainly won't use that scenario.  You could still make a comparison, but it would not be as interesting.  
 
