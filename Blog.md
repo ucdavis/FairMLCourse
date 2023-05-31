@@ -17,13 +17,13 @@ To expand on what I said today about the suitability of datasets for our Term Pr
    </tr>
 
    <tr>
-   <td>estimate effect</td>
-   <td>predict outcome</td>
+   <td>estimate an effect</td>
+   <td>predict an outcome</td>
    </tr>
 
    <tr>
-   <td>find a societal flaw</td>
-   <td>fix an algorithmic flaw</td>
+   <td>harm comes from society</td>
+   <td>harm comes from algorithm</td>
    </tr>
 
    <tr>
