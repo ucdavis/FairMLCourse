@@ -5,9 +5,7 @@
 
 **May 30, 2015:**
 
-To expand on what I said today about the suitability of datasets for our Term Project, I distinguished between a "fair ML" dataset and a "statistics" one.
-
-
+To expand on what I said today about the suitability of datasets for our Term Project, I distinguished between a "fair ML" dataset and a "statistics" one. Here is a side-by-side comparison:
 
 <table border="1">
 
@@ -32,6 +30,16 @@ To expand on what I said today about the suitability of datasets for our Term Pr
    </tr>
 
 </table>
+
+In our pef dataset, for instance, it would be interesting to investigate the nature of a gender pay gap--but that is a statistics problem, not one in fair ML.
+
+A quick test:  Does the method you developed in Problem 2, Homework 2, have any relevance to the dataset under consideration?  If not, then it probably isn't suitable for our Term Project.
+
+I also mentioned that you can probably force an unsuitable dataset to be suitable, by conjuring up some scenario.  In the pef data, say, you might think of a scenario in which we want to give some prize to random people based on their occupation.  If our prediction includes gender as a feature, that probably would be unfair, as women in the pef dataset are more concentrated in some occupations.  OK, now you have fair ML setting, but whatever paper you cite that uses the pef data, it almost certainly won't use that scenario.  You could still make a comparison, but it would not be as interesting.  
+
+So, again, if you wish to use a "statistics dataset," I will accept it, but you will be handicapping yourself as to what you can accomplish with it.
+
+Finally, note that often fair ML papers will use "statistics" datasets. It's very common, because it's convenient. But really, they shouldn't do so.
 
 
 **May 30, 1520:**
