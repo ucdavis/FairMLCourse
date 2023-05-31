@@ -3,6 +3,31 @@
 
 **Spring 2023**
 
+<table border="1">
+
+   <tr>
+   <th>statistics</th>
+   <th>fair ML</th>
+   </tr>
+
+   <tr>
+   <td>estimate effect</td>
+   <td>predict outcome</td>
+   </tr>
+
+   <tr>
+   <td>find a societal flaw</td>
+   <td>find a algorithmic flaw</td>
+   </tr>
+
+   <tr>
+   <td>adjust for covariates</td>
+   <td>use proxies but limit their impact</td>
+   </tr>
+
+</table>
+
+
 **May 30, 1520:**
 
 Please make sure to sign up with an [interactive grading slot](https://docs.google.com/spreadsheets/d/10npR9_39i4MXnbUHZ9bDmNFmh9NBV9omfIWsyT9QZyk/edit?usp=sharing) soon.
