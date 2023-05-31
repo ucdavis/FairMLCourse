@@ -46,11 +46,6 @@ Finally, note that often fair ML papers will use "statistics" datasets. It's ver
 
 Please make sure to sign up with an [interactive grading slot](https://docs.google.com/spreadsheets/d/10npR9_39i4MXnbUHZ9bDmNFmh9NBV9omfIWsyT9QZyk/edit?usp=sharing) soon.
 
-**May 29, 1725:**
-
-In the STDERRS lesson of the stat tutorial, "In the case of an estimator, q here" should read "
-In the case of an estimator, Q here".
-
 **May 29, 0950:**
 
 Very sorry for the delay in getting you your homework grades.  Our switching from quizzes to increased emphasis on homework early in the quarter was a good decision, but it does have its costs.  I should be getting you your Homework 1 grades sometime today.  
