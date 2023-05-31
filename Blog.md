@@ -3,6 +3,12 @@
 
 **Spring 2023**
 
+**May 30, 2015:**
+
+To expand on what I said today about the suitability of datasets for our Term Project, I distinguished between a "fair ML" dataset and a "statistics" one.
+
+
+
 <table border="1">
 
    <tr>
@@ -17,7 +23,7 @@
 
    <tr>
    <td>find a societal flaw</td>
-   <td>find a algorithmic flaw</td>
+   <td>fix an algorithmic flaw</td>
    </tr>
 
    <tr>
