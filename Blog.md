@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**June 1, 1015:**
+
+I wrote up a [detailed explanation](https://github.com/ucdavis/FairMLCourse/blob/main/WhatDoesTEstsThetaMean.md) of the unbalanced data issue.
+
 **May 30, 2015:**
 
 To expand on what I said today about the suitability of datasets for our Term Project, I distinguished between a "fair ML" dataset and a "statistics" one. Here is a side-by-side comparison:
