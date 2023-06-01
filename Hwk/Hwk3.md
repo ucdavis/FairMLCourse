@@ -1,7 +1,7 @@
 
 # Homework 3
 
-# Due Tuesday, May 23, 11:59 pm
+# Due Thursday, May 25, 11:59 pm
 
 # Problem 1 (of 1)
 
@@ -90,7 +90,7 @@ variables.
 
 * It is imperative that you use a debugging tool to track down bugs.
 
-* You may find the **subset()**, **evalr()** and **sprintf()**functions 
+* You may find the **subset()**, **evalr()** and **sprintf()** functions 
     useful.  
 
 * Be careful with data types.  If you subset an R factor (whether or not you use 
