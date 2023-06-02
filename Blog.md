@@ -3,6 +3,17 @@
 
 **Spring 2023**
 
+**June 1, 2025:**
+
+I was asked today whether regrades will be offered for Hwks 2 and 3.  Here is what I decided:
+
+* Regrades will be held for Hwk 1 only, on the grounds that the entire idea of interactive grading was new to you at the time.
+
+* In determining course grades, I will discard the lowest of your three grades.
+
+BTW, the Term Project will be treated as "Hwk 4," but with weight at least that of the two (remaining) Hwk assignments, as you should be putting at least that much effort into the Project.  I say "at least," because as I've said very good Projects will have an outsized impact on your course grade, much beyond what the formula would give you.
+
+
 **June 1, 1015:**
 
 I wrote up a [detailed explanation](https://github.com/ucdavis/FairMLCourse/blob/main/WhatDoesTEstsThetaMean.md) of the unbalanced data issue.
