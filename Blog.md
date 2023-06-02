@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**June 1, 2145:**
+
+I did some tweaking of the presentation in the document on statistical consistency and unbalanced data.
+
 **June 1, 2025:**
 
 I was asked today whether regrades will be offered for Hwks 2 and 3.  Here is what I decided:
