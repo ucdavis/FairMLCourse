@@ -1,7 +1,7 @@
 
 # Homework 3
 
-# Due Tuesday, May 23, 11:59 pm
+# Due Thursday, May 25, 11:59 pm
 
 # Problem 1 (of 1)
 
@@ -36,9 +36,9 @@ conditDisparity(data,yName,sName,xName,condits,qeFtn,
 where the arguments are as follows:
 
 *   data, yName: as in qeML functions; Y must be numeric
-*   xName: name of a numeric column
 *   sName: name of the sensitive variable, an R factor
-    condits: an R vector; each component is a character string for an R logical     expression, representing a desired condition; these must NOT involve sName
+*   xName: name of a numeric column
+*   condits: an R vector; each component is a character string for an R logical     expression, representing a desired condition; these must NOT involve sName
 *   qeFtn: qeML function (will use default arguments only)
 *   minS: minimum S group size; if the number of data points for a
     certain level of S is below this, that level will not be included
@@ -90,7 +90,7 @@ variables.
 
 * It is imperative that you use a debugging tool to track down bugs.
 
-* You may find the **subset()**, **evalr()** and **sprintf()**functions 
+* You may find the **subset()**, **evalr()** and **sprintf()** functions 
     useful.  
 
 * Be careful with data types.  If you subset an R factor (whether or not you use 

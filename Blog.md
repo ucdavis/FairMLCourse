@@ -3,6 +3,131 @@
 
 **Spring 2023**
 
+**June 1, 2145:**
+
+I did some tweaking of the presentation in the document on statistical consistency and unbalanced data.
+
+**June 1, 2025:**
+
+I was asked today whether regrades will be offered for Hwks 2 and 3.  Here is what I decided:
+
+* Regrades will be held for Hwk 1 only, on the grounds that the entire idea of interactive grading was new to you at the time.
+
+* In determining course grades, I will discard the lowest of your three grades.
+
+BTW, the Term Project will be treated as "Hwk 4," but with weight at least that of the two (remaining) Hwk assignments, as you should be putting at least that much effort into the Project.  I say "at least," because as I've said very good Projects will have an outsized impact on your course grade, much beyond what the formula would give you.
+
+
+**June 1, 1015:**
+
+I wrote up a [detailed explanation](https://github.com/ucdavis/FairMLCourse/blob/main/WhatDoesTEstsThetaMean.md) of the unbalanced data issue.
+
+**May 30, 2015:**
+
+To expand on what I said today about the suitability of datasets for our Term Project, I distinguished between a "fair ML" dataset and a "statistics" one. Here is a side-by-side comparison:
+
+<table border="1">
+
+   <tr>
+   <th>statistics</th>
+   <th>fair ML</th>
+   </tr>
+
+   <tr>
+   <td>estimate an effect</td>
+   <td>predict an outcome</td>
+   </tr>
+
+   <tr>
+   <td>harm comes from society</td>
+   <td>harm comes from an algorithm</td>
+   </tr>
+
+   <tr>
+   <td>adjust for covariates</td>
+   <td>use proxies but limit their impact</td>
+   </tr>
+
+</table>
+
+In our pef dataset, for instance, it would be interesting to investigate the nature of a gender pay gap--but that is a statistics problem, not one in fair ML.
+
+A quick test:  Does the method you developed in Problem 2, Homework 2, have any relevance to the dataset under consideration?  If not, then the dataset probably isn't suitable for our Term Project.
+
+I also mentioned that you can probably force an unsuitable dataset to be suitable, by conjuring up some scenario.  In the pef data, say, you might think of a scenario in which we want to give some prize to random people based on their occupation.  If our prediction includes gender as a feature, that probably would be unfair, as women in the pef dataset are more concentrated in some occupations.  OK, now you have fair ML setting, but whatever paper you cite that uses the pef data, it almost certainly won't use that scenario.  You could still make a comparison, but it would not be as interesting.  
+
+So, again, if you wish to use a "statistics dataset," I will accept it, but you will be handicapping yourself as to what you can accomplish with it.
+
+Finally, note that often fair ML papers will use "statistics" datasets. It's very common, because it's convenient. But really, they shouldn't do so.
+
+
+**May 30, 1520:**
+
+Please make sure to sign up with an [interactive grading slot](https://docs.google.com/spreadsheets/d/10npR9_39i4MXnbUHZ9bDmNFmh9NBV9omfIWsyT9QZyk/edit?usp=sharing) soon.
+
+**May 29, 0950:**
+
+Very sorry for the delay in getting you your homework grades.  Our switching from quizzes to increased emphasis on homework early in the quarter was a good decision, but it does have its costs.  I should be getting you your Homework 1 grades sometime today.  
+
+Please do NOT ask me the basis for the grade I've assigned you.  As we discussed in making the decision to switch away from quizzes, one consequence is that the grading becomes much more subjective.  This cannot be "relitigated."
+
+However, as I wrote in my blog post of April 28, 0930, if you believe your grade was inaccurate, I will be happy to do a regrade with you.  This will consist of asking you questions about our coursework, as in our interactive grading.
+
+Our course material is cumulative, and thus so would be the content of the regrade questions, but of course the main emphasis would be on more recent material.
+
+If your regrade answers are poor, I will NOT reduce your original grade.  Thus "there is no harm in trying."  However, if you did poorly in the original grading, it was likely due to a basic lack of knowledge of the course material.  For example, a few students could not give even a basic response to my open-ended question, "Tell me about SVM," and unfortunately it is likely that they would do equally poorly in questions I put to them in a regrade.
+
+The course material has been difficult, but very important, I believe.  You've learned at least some things that you will carry with you after the course ends, concerning the basic issues of machine learning and how the fairness issue interacts with them.  That's as much as any course instructor can hope for, and I hope your course grades will reflect that.  As I've mentioned, a good term project can greatly compensate for lower homework grades.
+
+
+**May 22, 2145:**
+
+In order to get something out of the class (and get a good grade), it's absolutely imperative to understand the big picture, not just coding.  Here is the sequence of thought you should go through in Hwk 3.
+
+* In formulating a sentence, a judge is dealing with probabilities, e.g.
+probability that the defendant will recidivate.
+
+* The COMPAS analysis article states that age is a big factor in that
+probability.  (Younger defendants are especially risky.)
+
+* So, the question is, how does the probability of recidivism depend on
+a covariate, say age?
+
+* But is exactly what ML is for, in the case of dichotomous Y: Estimate
+the probability of something, as a function of something else.  An ML function finds mean Y for given X, and in the dichotomous case, that reduces to P(Y = 1 | X).
+
+* So, our code will run the user's specified qeML function to find a
+probability for some dichotomous Y (e.g. recidivism) against some covariate (e.g. age), and plot the relation. 
+
+
+
+**May 22, 2110:**
+
+The function **evalr()** should be in **qeML**. Yuyi lectured on it (and on **sprintf()**) on April 6.
+
+Example:
+
+```,r
+> sqrt(10)
+[1] 3.162278
+> 'sqrt(10)'
+[1] "sqrt(10)"
+> evalr('sqrt(10)')
+[1] 3.162278
+```
+
+The function "magically" allowed us to execute an expression that is contained in a character string.  See Yuyi's lecture for an example in which this is useful.
+
+**May 22, 1925:**
+
+I've pushed back the due date for Hwk 3 to Thursday. Please note, though, that you should already be starting on your Term Project.
+
+Note again that in the Term Project **interpretation will be of the utmost importance**. You will definitely will be doing coding, but that is not the main focus.
+
+**May 19, 1415:**
+
+Our [Term Project](https://github.com/ucdavis/FairMLCourse/blob/main/Hwk/TermProject.md) is now ready!
+
 **May 19, 0955:**
 
 You may find the following code useful for saving a currently-displayed R graphic image to disk:
