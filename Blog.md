@@ -3,6 +3,11 @@
 
 **Spring 2023**
 
+**June 3, 0815:**
+
+I've distilled the Scutari paper that we covered this Thursday into
+[a few main points](https://github.com/ucdavis/FairMLCourse/blob/main/Scutari.md).
+
 **June 1, 2145:**
 
 I did some tweaking of the presentation in the document on statistical consistency and unbalanced data.
