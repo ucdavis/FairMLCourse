@@ -84,7 +84,7 @@ it can indeed be very subtle.
     Highly technical; we will skip the more advanced material, mainly
     focusing on the intuition.
 
-* [NM extension of Scutari paper](https://arxiv.org/abs/2210.06680)
+* [NM extension of Scutari paper](https://arxiv.org/pdf/2208.06557.pdf)
 
 ### ML Fairness in Specific Applications
 
