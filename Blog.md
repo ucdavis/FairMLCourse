@@ -3,9 +3,9 @@
 
 **Spring 2023**
 
-**June 5,2300:**
+**June 5, 2300:**
 
-Very sorry I've not gotten you your Homewo 2 grades back yet. Actually, I have both Hwk 2 and Hwk 3 grades done, just need to record them electronicly then run my script to send them out. The grades in Hwk 2 and 3 were much better than those in Hwk 1.
+Very sorry I've not gotten you your Homework 2 grades back yet. Actually, I have both Hwk 2 and Hwk 3 grades done, just need to record them electronically then run my script to send them out. The grades in Hwk 2 and 3 were much better than those in Hwk 1.
 
 **June 5, 2120:**
 
