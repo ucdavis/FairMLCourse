@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**June 5,2300:**
+
+Very sorry I've not gotten you your Homewo 2 grades back yet. Actually, I have both Hwk 2 and Hwk 3 grades done, just need to record them electronicly then run my script to send them out. The grades in Hwk 2 and 3 were much better than those in Hwk 1.
+
 **June 5, 2120:**
 
 I've decided to push back the due dates for the Term Projects in both my classes to June 13.  I shouldn't extend it any further, so as to not affect your final exams much, and of course I need to read and grade all those Project papers before the campus grading deadline. 
