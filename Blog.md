@@ -7,7 +7,7 @@
 
 You may be exhausted at the end of the quarter/year, and can hardly think of the future, but...
 
-If you are not graduating and don't have a summer internship etc., I have a project you may be interested in. This would be development of an R package, **dsld**, Data Science Looks at Discrimination. I'm thinking maybe 1-3 189G (or other) students would work on it, with Author status, which I will also have. We'll put it on CRAN, and publicize it, maybe submit a paper to a journal. I do think it wll attract a a amount of attention.
+If you are not graduating and don't have a summer internship etc., I have a project you may be interested in. This would be development of an R package, **dsld**, Data Science Looks at Discrimination. I'm thinking maybe 1-3 189G (or other) students would work on it, with Author status, which I will also have. We'll put it on CRAN, and publicize it and probably submit a paper to a journal. I do think it will attract a considerable amount of attention.
 
 Some main points:
 
