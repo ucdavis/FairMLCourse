@@ -3,6 +3,16 @@
 
 **Spring 2023**
 
+**June 6, 0940:**
+
+On course grades:
+
+* As noted in a previous blog post, I will delete the lowest letter grade among your Hwk 1, 2 and 3 results.
+* I had three regrade requests for Hwk 1. Of those, two resulted in a substantially higher grade, while the third resulted in no change. I can still do regrades for Hwk 1 if anyone wishes to do so, though as I said last night here, most people had much better grades on Hwk 2/3 than on Hwk 1.
+* The Term Project counts as "Hwk 4." Thus your course grade will be based on your higher two Hwk 1/2/3 grades and the Term Project, weighted equally.
+* As noted many times, a good Term Project can have far more impact on your course grade than the above formula yields. I gave a typical Term Project bonus scheme in [our course Procedural Information document](https://github.com/matloff/nmGeneralCourseInfo/blob/master/RulesAndProcedures.md#term-project) at the beginning of the quarter. As you can see, a good Project can have a MAJOR impact on your course grade.
+* In an advanced upper-division course like this, my course grade distribution is typically something like half A's and half B's.
+
 **June 5, 2310:**
 
 You may be exhausted at the end of the quarter/year, and can hardly think of the future, but...
