@@ -3,6 +3,20 @@
 
 **Spring 2023**
 
+**June 5, 2310:**
+
+You may be exhausted at the end of the quarter/year, and can hardly think of the future, but...
+
+If you are not graduating and don't have a summer internship etc., I have a project you may be interested in. This would be development of an R package, **dsld**, Data Science Looks at Discrimination. I'm thinking maybe 1-3 189G (or other) students would work on it, with Author status, which I will also have. We'll put it on CRAN, and publicize it, maybe submit a paper to a journal. I do think it wll attract a a amount of attention.
+
+Some main points:
+
+* The package will cover both general discrimination aspects and fair ML aspects. E.g. a gender pay gap analysis, which as I've said is NOT in the realm of our course, could be analyzed with **dsld** tools.
+
+* The package will consist of wrappers to some related packages, e.g. **fairml** and [my **cdparcoord** package](https://arxiv.org/pdf/1709.00665.pdf).
+
+* The package will contain new methods, such as the ones you've developed in Homework in our course.
+
 **June 5, 2300:**
 
 Very sorry I've not gotten you your Homework 2 grades back yet. Actually, I have both Hwk 2 and Hwk 3 grades done, just need to record them electronically then run my script to send them out. The grades in Hwk 2 and 3 were much better than those in Hwk 1.
