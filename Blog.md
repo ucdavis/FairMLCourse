@@ -3,6 +3,10 @@
 
 **Spring 2023**
 
+**June 5, 2120:**
+
+I've decided to push back the due dates for the Term Projects in both my classes to June 13.  I shouldn't extend it any further, so as to not affect your final exams much, and of course I need to read and grade all those Project papers before the campus grading deadline. 
+
 **June 3, 0815:**
 
 I've distilled the Scutari paper that we covered this Thursday into
